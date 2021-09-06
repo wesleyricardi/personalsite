@@ -1,0 +1,75 @@
+@import "config/globals.css";
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
+
+body,
+textarea,
+button,
+input {
+  font-family: var(--font-family);
+  font-size: 16px;
+}
+textarea,
+input {
+  background-color: var(--color-dark);
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+button,
+input[type="submit"] {
+  padding: 0.6em 1.2em;
+  background-color: var(--main-color);
+  color: var(--color-dark);
+  border: none;
+  border-radius: 0.3em;
+}
+
+footer#footer {
+  margin-top: 4em;
+  padding: 4em 0px;
+  background: var(--color-dark);
+  color: var(--color-light);
+}
+
+@media only screen and (max-width: 600px) {
+  body,
+  textarea,
+  button,
+  input {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  body,
+  textarea,
+  button,
+  input {
+    font-size: 12px;
+  }
+}
