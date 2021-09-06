@@ -56,7 +56,7 @@ footer#footer {
   color: var(--color-light);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   body,
   textarea,
   button,
@@ -65,11 +65,47 @@ footer#footer {
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
   body,
   textarea,
   button,
   input {
     font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body,
+  textarea,
+  button,
+  input {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  body,
+  textarea,
+  button,
+  input {
+    font-size: 9px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  body,
+  textarea,
+  button,
+  input {
+    font-size: 8px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  body,
+  textarea,
+  button,
+  input {
+    font-size: 7px;
   }
 }

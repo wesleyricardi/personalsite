@@ -1,0 +1,11 @@
+.main > img {
+  display: block;
+  margin: 2.7em auto 0;
+  width: 12.5em;
+  height: 12.5em;
+  border-radius: 50%;
+}
+
+.main > p {
+  width: var(--container-size);
+}

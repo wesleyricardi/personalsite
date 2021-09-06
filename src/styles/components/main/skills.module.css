@@ -1,0 +1,50 @@
+section.main {
+  background-image: url(/main/skills_background.jpg);
+  background-size: cover;
+}
+
+section.main > div {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(23, 23, 23, 0.85) 0%,
+    rgba(23, 23, 23, 0.425) 100%
+  );
+}
+
+section.main > div > p {
+  width: var(--container-size);
+  margin-bottom: 1em;
+}
+
+section.main > div > ul {
+  width: var(--container-size);
+  margin: 0 auto;
+  padding: 0 2em;
+}
+
+section.main > div > ul > li {
+  display: inline-block;
+  position: relative;
+  list-style: none;
+  width: 50%;
+  font-size: 1.4em;
+  margin: 0.5em 0;
+}
+
+section.main > div > ul > li > img {
+  max-width: 2.2em;
+  vertical-align: middle;
+}
+
+section.main > div > ul > li > span {
+  position: absolute;
+  right: 1em;
+  top: calc(50% - 0.7em);
+}
+
+section.main > div > ul > li:nth-of-type(2n + 1) > span {
+  color: var(--main-color);
+}
+section.main > div > ul > li:nth-of-type(2n + 0) > span {
+  color: var(--secundary-color);
+}

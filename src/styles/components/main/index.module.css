@@ -1,0 +1,30 @@
+main.main > section {
+  padding: 0 0.3em;
+}
+
+main.main h2 {
+  width: var(--container-size);
+  padding: 0 1em;
+  font-weight: 300;
+  font-size: 3em;
+  text-align: center;
+  margin: 0.5em auto;
+}
+
+main.main h2 > b {
+  font-style: italic;
+  font-weight: normal;
+}
+
+main.main h2::after {
+  content: "";
+  display: block;
+  width: 3em;
+  height: 0.1em;
+  margin: 0.1em auto;
+  background: var(--main-color);
+}
+
+main.main p {
+  margin: 0 auto;
+}
