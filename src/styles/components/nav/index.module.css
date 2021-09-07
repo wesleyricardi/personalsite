@@ -7,11 +7,50 @@ nav.main {
   z-index: 1;
   background-color: black;
 }
-nav.main > div {
+nav.main > div:first-of-type {
   width: clamp(100px, 100%, 1300px);
 }
 
-nav.main > div > img {
+nav.main > div:first-of-type > img:first-of-type {
+  padding: 2px 0;
+  width: 30px;
+  transition: all 300ms ease;
+}
+
+nav.main > div:first-of-type > img {
   height: 25px;
   margin: 0 5px;
+}
+
+nav.main > div:nth-of-type(2) {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  position: fixed;
+  height: calc(100vh - 49px);
+  width: 100vw;
+  background-color: #171717cc;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  top: 49px;
+  left: 0;
+  transition: all 300ms ease;
+}
+
+nav.main > div:nth-of-type(2) > ul {
+  list-style: none;
+}
+
+nav.main > div:nth-of-type(2) > ul > a > li {
+  width: 200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  text-align: center;
+  background-color: transparent;
+  transition: background 300ms ease;
+}
+
+nav.main > div:nth-of-type(2) > ul > a > li:hover {
+  background-color: var(--main-color);
+  color: var(--color-dark);
 }

@@ -2,7 +2,7 @@ import style from "../../styles/components/main/portfolio.module.css";
 
 export default function portfolio() {
   return (
-    <section className={style.main}>
+    <section id="portfolio" className={style.main}>
       <h2>Meu portfólio</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo

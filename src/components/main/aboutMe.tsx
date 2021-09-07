@@ -2,7 +2,7 @@ import style from "../../styles/components/main/aboutMe.module.css";
 
 export default function aboutMe() {
   return (
-    <section className={style.main}>
+    <section id="aboutme" className={style.main}>
       <img src="/main/profile_photo.jfif" alt="Wesley Ricardi profile photo" />
       <h2>
         Esse sou eu, apaixado por programação <b>&</b> tecnologia

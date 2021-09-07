@@ -2,7 +2,7 @@ import style from "../../styles/components/main/contact.module.css";
 
 export default function contact() {
   return (
-    <section className={style.main}>
+    <section id="contact" className={style.main}>
       <h2>Entre em contato</h2>
       <p>Adoraria ouvir sobre o que achou</p>
       <div>
