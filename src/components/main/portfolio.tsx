@@ -13,6 +13,7 @@ export default function portfolio() {
         <img src="/main/portfolio/defaut.png" alt="" />
         <img src="/main/portfolio/defaut.png" alt="" />
         <img src="/main/portfolio/defaut.png" alt="" />
+        <img src="/main/portfolio/defaut.png" alt="" />
       </div>
     </section>
   );

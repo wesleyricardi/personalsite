@@ -5,7 +5,7 @@
 .main > div {
   background-color: var(--color-light);
   color: var(--color-dark);
-  padding: 72px;
+  padding: 72px 0;
   margin-top: 36px;
   text-align: center;
 }
@@ -13,8 +13,9 @@
 .main > div > div:first-of-type {
   position: relative;
   display: inline-block;
-  width: 455px;
-  height: 350px;
+  width: 335px;
+  height: 335px;
+  margin-right: 100px;
 }
 
 .main > div > div:first-of-type div {
@@ -27,8 +28,8 @@
   display: block;
   height: 250px;
   width: 250px;
-  top: calc(50% - 111px);
-  left: calc(50% - 188px);
+  top: calc(50% - 103px);
+  left: calc(50% - 125px);
 }
 
 .main > div > div:first-of-type > span > span {
@@ -42,7 +43,6 @@
 }
 
 .main > div > div:first-of-type > div {
-  top: 20px;
   height: 335px;
   width: 335px;
   background-color: var(--main-color);
@@ -75,7 +75,8 @@
 
 .main > div > form {
   display: inline-block;
-  width: 455px;
+  width: clamp(200px, 100%, 445px);
+  padding: 0 10px;
 }
 
 .main > div > form > input {
@@ -105,5 +106,64 @@
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .main > div > div:first-of-type {
+    margin-right: 50px;
+  }
+  .main > div {
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .main > div > div:first-of-type {
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .main > div {
+    padding: 10px 0;
+  }
+
+  .main > div > div:first-of-type div {
+    display: none;
+  }
+
+  .main > div > div:first-of-type {
+    height: auto;
+    width: fit-content;
+  }
+
+  .main > div > div:first-of-type > span {
+    width: fit-content;
+    position: relative;
+    top: auto;
+    left: auto;
+    height: auto;
+  }
+
+  .main > div > div:first-of-type > span > span {
+    display: none;
+  }
+
+  .main > div > div:first-of-type > span > img {
+    height: 60px;
+    margin: 15px 35px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .main > div > div:first-of-type > span > img {
+    margin: 15px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .main > div > div:first-of-type > span > img {
+    height: 40px;
   }
 }

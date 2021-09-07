@@ -12,36 +12,51 @@ section.main > div {
   );
 }
 
-section.main > div > ul {
-  width: var(--container-size);
-  margin: 0 auto;
-  padding: 0 10px;
+section.main > div > div {
+  overflow-x: auto;
 }
 
-section.main > div > ul > li {
-  display: inline-block;
+section.main > div > div > ul {
+  width: var(--container-size);
+  margin: 0 auto;
+}
+
+section.main > div > div > ul > li {
+  display: inline-grid;
+  grid-template-columns: 0.3fr 1fr 1fr;
   position: relative;
   list-style: none;
   width: 50%;
   font-size: var(--h4-font-size);
   margin: 0.5rem 0;
+  padding: 0 20px;
 }
 
-section.main > div > ul > li > img {
+section.main > div > div > ul > li > img {
   max-width: calc(var(--h4-font-size) * 1.5);
   vertical-align: middle;
   margin-right: 10px;
 }
 
-section.main > div > ul > li > span {
-  position: absolute;
-  right: 1rem;
-  top: calc(50% - 0.7rem);
+section.main > div > div > ul > li > span {
+  display: inline-block;
+  justify-self: self-end;
 }
 
-section.main > div > ul > li:nth-of-type(2n + 1) > span {
+section.main > div > div > ul > li:nth-of-type(2n + 1) > span {
   color: var(--main-color);
 }
-section.main > div > ul > li:nth-of-type(2n + 0) > span {
+section.main > div > div > ul > li:nth-of-type(2n + 0) > span {
   color: var(--secundary-color);
+}
+
+@media only screen and (max-width: 500px) {
+  section.main > div > div > ul {
+    width: 200vw;
+  }
+
+  section.main > div > div > ul > li {
+    width: 100vw;
+    padding: 0 50px;
+  }
 }
