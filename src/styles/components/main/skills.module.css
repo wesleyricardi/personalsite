@@ -1,4 +1,5 @@
 section.main {
+  padding-top: 1em;
   background-image: url(/main/skills_background.jpg);
   background-size: cover;
 }
@@ -11,15 +12,10 @@ section.main > div {
   );
 }
 
-section.main > div > p {
-  width: var(--container-size);
-  margin-bottom: 1em;
-}
-
 section.main > div > ul {
   width: var(--container-size);
   margin: 0 auto;
-  padding: 0 2em;
+  padding: 0 10px;
 }
 
 section.main > div > ul > li {
@@ -27,19 +23,20 @@ section.main > div > ul > li {
   position: relative;
   list-style: none;
   width: 50%;
-  font-size: 1.4em;
-  margin: 0.5em 0;
+  font-size: var(--h4-font-size);
+  margin: 0.5rem 0;
 }
 
 section.main > div > ul > li > img {
-  max-width: 2.2em;
+  max-width: calc(var(--h4-font-size) * 1.5);
   vertical-align: middle;
+  margin-right: 10px;
 }
 
 section.main > div > ul > li > span {
   position: absolute;
-  right: 1em;
-  top: calc(50% - 0.7em);
+  right: 1rem;
+  top: calc(50% - 0.7rem);
 }
 
 section.main > div > ul > li:nth-of-type(2n + 1) > span {

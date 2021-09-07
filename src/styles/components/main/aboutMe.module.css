@@ -1,11 +1,10 @@
+.main {
+  padding-bottom: 20px;
+}
+
 .main > img {
   display: block;
   margin: 2.7em auto 0;
-  width: 12.5em;
-  height: 12.5em;
+  width: clamp(100px, 30%, 200px);
   border-radius: 50%;
-}
-
-.main > p {
-  width: var(--container-size);
 }

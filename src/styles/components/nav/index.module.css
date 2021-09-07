@@ -1,0 +1,17 @@
+nav.main {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  text-align: right;
+  padding: 10px 10px;
+  z-index: 1;
+  background-color: black;
+}
+nav.main > div {
+  width: clamp(100px, 100%, 1300px);
+}
+
+nav.main > div > img {
+  height: 25px;
+  margin: 0 5px;
+}

@@ -1,0 +1,11 @@
+section.main > div {
+  display: flex;
+  flex-wrap: wrap;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+section.main > div > img {
+  min-width: 100px;
+  max-width: 300px;
+}

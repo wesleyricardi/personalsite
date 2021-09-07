@@ -1,7 +1,8 @@
 import Head from "next/head";
-import Footer from "../components/footer";
+import Nav from "../components/nav";
 import Header from "../components/header";
 import Main from "../components/main";
+import Footer from "../components/footer";
 
 export default function Index() {
   return (
@@ -21,6 +22,7 @@ export default function Index() {
           rel="stylesheet"
         />
       </Head>
+      <Nav />
       <Header />
       <Main />
       <Footer />

@@ -1,0 +1,109 @@
+.main > p {
+  text-align: center;
+}
+
+.main > div {
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  padding: 72px;
+  margin-top: 36px;
+  text-align: center;
+}
+
+.main > div > div:first-of-type {
+  position: relative;
+  display: inline-block;
+  width: 455px;
+  height: 350px;
+}
+
+.main > div > div:first-of-type div {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.main > div > div:first-of-type > span {
+  position: absolute;
+  display: block;
+  height: 250px;
+  width: 250px;
+  top: calc(50% - 111px);
+  left: calc(50% - 188px);
+}
+
+.main > div > div:first-of-type > span > span {
+  display: block;
+  margin: 20px;
+}
+
+.main > div > div:first-of-type > span > img {
+  height: 40px;
+  margin: 15px;
+}
+
+.main > div > div:first-of-type > div {
+  top: 20px;
+  height: 335px;
+  width: 335px;
+  background-color: var(--main-color);
+  animation: lds-circle 4.2s linear infinite;
+}
+
+.main > div > div:first-of-type > div > div {
+  height: 330px;
+  width: 330px;
+  bottom: 0;
+  left: 1px;
+  background-color: var(--secundary-color);
+}
+
+.main > div > div:first-of-type > div > div > div {
+  height: 315px;
+  width: 315px;
+  bottom: 1px;
+  right: 5px;
+  background-color: var(--main-color);
+}
+
+.main > div > div:first-of-type > div > div > div > div {
+  height: 310px;
+  width: 310px;
+  left: -9px;
+  top: -5px;
+  background-color: var(--color-light);
+}
+
+.main > div > form {
+  display: inline-block;
+  width: 455px;
+}
+
+.main > div > form > input {
+  width: 100%;
+  display: block;
+}
+
+.main > div > form > textarea {
+  resize: none;
+  width: 100%;
+}
+
+.main > div > form > div {
+  background-color: var(--color-dark);
+  text-align: right;
+  margin-top: -10px;
+}
+
+.main > div > form > div > button {
+  bottom: 9px;
+  right: 0px;
+}
+
+@keyframes lds-circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

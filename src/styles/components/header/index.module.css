@@ -7,7 +7,7 @@ header.main {
   background-color: black;
   background-image: url("/header/background.jpg");
   background-position: bottom;
-  background-size: 82em;
+  background-size: 81em;
   background-repeat: no-repeat;
 }
 
@@ -17,22 +17,17 @@ header.main > div {
   left: 0;
   right: 0;
   margin: 0 auto;
-  width: 41em;
+  padding: 0 10px;
+  width: clamp(100%, 100%, 656px);
 }
 
 header.main > div > h1 {
   font-family: "Press Start 2P", cursive;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 3em;
-  line-height: 2em;
   text-align: center;
 }
 
 header.main > div > h2 {
-  font-size: 3em;
-  line-height: 1.3em;
-  font-weight: normal;
+  font-weight: 300;
   margin: 0 auto;
   width: fit-content;
   background: radial-gradient(

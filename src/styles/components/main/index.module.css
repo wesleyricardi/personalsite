@@ -1,14 +1,9 @@
-main.main > section {
-  padding: 0 0.3em;
-}
-
 main.main h2 {
   width: var(--container-size);
   padding: 0 1em;
-  font-weight: 300;
-  font-size: 3em;
+  font-weight: lighter;
   text-align: center;
-  margin: 0.5em auto;
+  margin: 0.5rem auto;
 }
 
 main.main h2 > b {
@@ -19,12 +14,13 @@ main.main h2 > b {
 main.main h2::after {
   content: "";
   display: block;
-  width: 3em;
-  height: 0.1em;
-  margin: 0.1em auto;
+  width: 3rem;
+  height: 0.2rem;
+  margin: 0.1rem auto 1rem;
   background: var(--main-color);
 }
 
 main.main p {
-  margin: 0 auto;
+  width: var(--container-size);
+  margin: 10px auto;
 }
