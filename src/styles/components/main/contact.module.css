@@ -5,7 +5,7 @@
 .main > div {
   background-color: var(--color-light);
   color: var(--color-dark);
-  padding: 72px 0;
+  padding: 72px 0px;
   margin-top: 36px;
   text-align: center;
 }
@@ -126,7 +126,7 @@
 
 @media only screen and (max-width: 840px) {
   .main > div {
-    padding: 10px 0;
+    padding: 10px 0px;
   }
 
   .main > div > div:first-of-type div {
