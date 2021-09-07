@@ -5,24 +5,60 @@ section.main > div {
   margin: 0 auto;
 }
 
-section.main > div > img {
+section.main > div > picture {
+  position: relative;
+}
+
+section.main > div > picture {
   width: 300px;
+  margin-bottom: -4px;
+  transition: transform 300ms ease;
+}
+
+section.main > div > picture > img {
+  width: 100%;
+}
+
+section.main > div > picture:hover {
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+section.main > div > picture::before {
+  position: absolute;
+  padding-top: 10%;
+  content: "Entrar";
+  width: 100%;
+  height: 100%;
+  transition: all 300ms ease;
+
+  text-align: center;
+  background-color: #171717cc;
+  background-image: url("/svgs/keyhole.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25%;
+  opacity: 0;
+}
+
+section.main > div > picture:hover::before {
+  opacity: 1;
 }
 
 @media only screen and (max-width: 1200px) {
-  section.main > div > img {
+  section.main > div > picture {
     width: 25%;
   }
 }
 
 @media only screen and (max-width: 900px) {
-  section.main > div > img {
+  section.main > div > picture {
     width: 33.333%;
   }
 }
 
 @media only screen and (max-width: 400px) {
-  section.main > div > img {
+  section.main > div > picture {
     width: 50%;
   }
 }

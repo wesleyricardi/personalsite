@@ -10,10 +10,18 @@ export default function portfolio() {
         dis parturient montes
       </p>
       <div>
-        <img src="/main/portfolio/defaut.png" alt="" />
-        <img src="/main/portfolio/defaut.png" alt="" />
-        <img src="/main/portfolio/defaut.png" alt="" />
-        <img src="/main/portfolio/defaut.png" alt="" />
+        <picture>
+          <img src="/main/portfolio/defaut.png" alt="" />
+        </picture>
+        <picture>
+          <img src="/main/portfolio/defaut.png" alt="" />
+        </picture>
+        <picture>
+          <img src="/main/portfolio/defaut.png" alt="" />
+        </picture>
+        <picture>
+          <img src="/main/portfolio/defaut.png" alt="" />
+        </picture>
       </div>
     </section>
   );
