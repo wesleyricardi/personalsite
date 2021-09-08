@@ -159,4 +159,8 @@ section.main > div > div:first-of-type > div > section > div > button {
   .arrowright {
     right: 15px;
   }
+
+  section.main > div:first-of-type {
+    padding: 0 0 20px;
+  }
 }
