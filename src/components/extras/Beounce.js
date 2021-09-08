@@ -1,4 +1,4 @@
-export default function usedebounce(fn, ms) {
+export default function Bebounce(fn, ms) {
   let timer;
   return (_) => {
     clearTimeout(timer);
