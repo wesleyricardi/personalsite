@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import style from "../../styles/components/main/portfolio.module.css";
 
-export default function portfolio() {
+export default function Portfolio() {
   useEffect(() => {
     window.addEventListener("resize", () => handleArrowSlide("stabilize"));
     return () =>
