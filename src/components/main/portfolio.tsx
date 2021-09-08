@@ -1,8 +1,8 @@
 import style from "../../styles/components/main/portfolio.module.css";
-import Resize from "../extras/onResize";
+import useResize from "../extras/useOnResize";
 
 export default function portfolio() {
-  Resize(() => handleArrowSlide("stabilize"));
+  useResize(() => handleArrowSlide("stabilize"));
 
   function handleSlide(e: any): void {
     e.preventDefault();
