@@ -3,7 +3,7 @@ section.main > div:first-of-type {
   background-color: var(--color-light);
   color: var(--color-dark);
   padding: 20px 0;
-
+  margin-top: 30px;
   --margin-slide: 900px;
 }
 
@@ -11,7 +11,7 @@ section.main > div > div:first-of-type {
   position: relative;
   width: calc(100vw - var(--margin-slide));
   overflow-x: hidden;
-  scroll-behavior: smooth;
+  /*  scroll-behavior: smooth; */
   margin: 0 auto;
 }
 
@@ -38,6 +38,7 @@ section.main > div > div:first-of-type > div > section > div {
 }
 
 section.main > div > div:first-of-type > div > section > div > h3 {
+  font-weight: 400;
   text-align: center;
 }
 
@@ -48,6 +49,7 @@ section.main > div > div:first-of-type > div > section > div > p {
 
 section.main > div > div:first-of-type > div > section > div > ul {
   margin-left: 30px;
+  margin-bottom: 20px;
 }
 
 section.main > div > div:first-of-type > div > section > div > button {
@@ -148,6 +150,11 @@ section.main > div > div:first-of-type > div > section > div > button {
     height: 300px;
     object-fit: cover;
   }
+
+  section.main > div > div:first-of-type > div > section > div > h3 {
+    margin-top: 10px;
+  }
+
   section.main > div:first-of-type {
     --margin-slide: 0px;
   }

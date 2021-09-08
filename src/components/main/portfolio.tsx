@@ -1,6 +1,9 @@
 import style from "../../styles/components/main/portfolio.module.css";
+import useResize from "../extras/useResize";
 
 export default function portfolio() {
+  useResize(() => handleArrowSlide("stabilize"));
+
   function handleSlide(e: any): void {
     e.preventDefault();
     const slide = document.getElementById(
@@ -8,7 +11,10 @@ export default function portfolio() {
     ) as HTMLElement;
     const container = slide.parentElement as HTMLElement;
     const scrollPosition = slide.offsetLeft - container.offsetLeft;
-    (container.parentElement as HTMLElement).scrollTo({ left: scrollPosition });
+    (container.parentElement as HTMLElement).scrollTo({
+      left: scrollPosition,
+      behavior: "smooth",
+    });
   }
 
   function handleArrowSlide(direction: string): void {
@@ -28,15 +34,25 @@ export default function portfolio() {
     pages.map((page, index) => {
       const pageNumber = index + 1;
 
-      if (slidePosition >= page - 20 && slidePosition <= page + 20) {
+      if (
+        slidePosition >= page - slideWidth / 2 &&
+        slidePosition <= page + slideWidth / 2
+      ) {
         if (direction === "left") {
           if (pageNumber === 1)
-            container.scrollTo({ left: pages[pages.length - 1] });
-          else container.scrollTo({ left: pages[index - 1] });
+            container.scrollTo({
+              left: pages[pages.length - 1],
+              behavior: "smooth",
+            });
+          else
+            container.scrollTo({ left: pages[index - 1], behavior: "smooth" });
         } else if (direction === "right") {
           if (pageNumber === pages.length)
-            container.scrollTo({ left: pages[0] });
-          else container.scrollTo({ left: pages[index + 1] });
+            container.scrollTo({ left: pages[0], behavior: "smooth" });
+          else
+            container.scrollTo({ left: pages[index + 1], behavior: "smooth" });
+        } else if (direction === "stabilize") {
+          container.scrollTo({ left: pages[index], behavior: "auto" });
         }
       }
     });
