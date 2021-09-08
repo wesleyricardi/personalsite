@@ -1,12 +1,12 @@
 import { useEffect } from "react";
-import useBeounce from "./useBeounce";
+import Beounce from "./Beounce";
 
-export default function useResize(fn: () => void, delay: number | null = null) {
+export default function onResize(fn: () => void, delay: number | null = null) {
   useEffect(() => {
     let action = fn;
 
     if (delay) {
-      action = useBeounce(() => {
+      action = Beounce(() => {
         fn();
       }, delay);
     }
