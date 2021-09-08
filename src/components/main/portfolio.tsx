@@ -1,10 +1,12 @@
+import { useEffect } from "react";
 import style from "../../styles/components/main/portfolio.module.css";
-import { useOnResize } from "../extras/useOnResize";
 
 export default function portfolio() {
-  const OnResize = useOnResize();
-
-  OnResize(() => handleArrowSlide("stabilize"));
+  useEffect(() => {
+    window.addEventListener("resize", () => handleArrowSlide("stabilize"));
+    return () =>
+      window.removeEventListener("resize", () => handleArrowSlide("stabilize"));
+  }, []);
 
   function handleSlide(e: any): void {
     e.preventDefault();
