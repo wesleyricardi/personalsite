@@ -26,6 +26,11 @@ main.main h2::after {
   background: var(--main-color);
 }
 
+main.main h3 {
+  font-weight: 300;
+  text-align: center;
+}
+
 main.main p {
   width: var(--container-size);
   margin: 10px auto;

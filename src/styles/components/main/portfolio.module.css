@@ -1,64 +1,162 @@
-section.main > div {
-  display: flex;
-  flex-wrap: wrap;
-  width: fit-content;
+section.main > div:first-of-type {
+  position: relative;
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  padding: 20px 0;
+
+  --margin-slide: 900px;
+}
+
+section.main > div > div:first-of-type {
+  position: relative;
+  width: calc(100vw - var(--margin-slide));
+  overflow-x: hidden;
+  scroll-behavior: smooth;
   margin: 0 auto;
 }
 
-section.main > div > picture {
-  position: relative;
+section.main > div > div:first-of-type > div {
+  display: flex;
+  width: max-content;
 }
 
-section.main > div > picture {
+section.main > div > div:first-of-type > div > section {
+  width: calc(100vw - var(--margin-slide));
+  display: flex;
+  /* flex-wrap: wrap; */
+  margin: 0 auto;
+}
+section.main > div > div:first-of-type > div > section > picture > img {
   width: 300px;
-  margin-bottom: -4px;
-  transition: transform 300ms ease;
 }
 
-section.main > div > picture > img {
+section.main > div > div:first-of-type > div > section > div {
   width: 100%;
+  /* min-width: 400px; */
+  margin: calc(var(--margin-slide) / 20) 0px 0px calc(var(--margin-slide) / 10);
+  padding-left: 5px;
 }
 
-section.main > div > picture:hover {
-  transform: scale(1.05);
-  z-index: 1;
-}
-
-section.main > div > picture::before {
-  position: absolute;
-  padding-top: 10%;
-  content: "Entrar";
-  width: 100%;
-  height: 100%;
-  transition: all 300ms ease;
-
+section.main > div > div:first-of-type > div > section > div > h3 {
   text-align: center;
-  background-color: #171717cc;
-  background-image: url("/svgs/keyhole.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 25%;
-  opacity: 0;
 }
 
-section.main > div > picture:hover::before {
-  opacity: 1;
+section.main > div > div:first-of-type > div > section > div > p {
+  width: 100%;
+  padding: 0;
 }
 
-@media only screen and (max-width: 1200px) {
-  section.main > div > picture {
-    width: 25%;
+section.main > div > div:first-of-type > div > section > div > ul {
+  margin-left: 30px;
+}
+
+section.main > div > div:first-of-type > div > section > div > button {
+  display: block;
+  margin: 0 auto;
+  color: white;
+}
+
+.eclipse {
+  width: fit-content;
+  margin: 20px auto 0;
+}
+
+.eclipse > a {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  background-color: #17171780;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.eclipse > a:hover {
+  background-color: #171717;
+}
+
+.arrowleft {
+  left: calc(var(--margin-slide) / 3);
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  border-color: #17171780;
+}
+
+.arrowright {
+  right: calc(var(--margin-slide) / 3);
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  border-color: #17171780;
+}
+
+.arrowleft:hover,
+.arrowright:hover {
+  border-color: #171717;
+}
+
+@media only screen and (max-width: 1700px) {
+  section.main > div:first-of-type {
+    --margin-slide: 600px;
   }
 }
 
-@media only screen and (max-width: 900px) {
-  section.main > div > picture {
-    width: 33.333%;
+@media only screen and (max-width: 1500px) {
+  section.main > div:first-of-type {
+    --margin-slide: 400px;
   }
 }
 
-@media only screen and (max-width: 400px) {
-  section.main > div > picture {
-    width: 50%;
+@media only screen and (max-width: 1300px) {
+  section.main > div:first-of-type {
+    --margin-slide: 200px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  section.main > div:first-of-type {
+    --margin-slide: 100px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  section.main > div:first-of-type {
+    --margin-slide: 50px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  section.main > div > div:first-of-type > div > section > picture > img {
+    width: 270px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  section.main > div > div:first-of-type > div > section > picture > img {
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  section.main > div > div:first-of-type {
+    width: 100%;
+  }
+
+  section.main > div > div:first-of-type > div > section {
+    flex-wrap: wrap;
+  }
+  section.main > div > div:first-of-type > div > section > picture > img {
+    width: 100vw;
+    height: 300px;
+    object-fit: cover;
+  }
+  section.main > div:first-of-type {
+    --margin-slide: 0px;
+  }
+
+  .arrowleft {
+    left: 15px;
+  }
+
+  .arrowright {
+    right: 15px;
   }
 }
