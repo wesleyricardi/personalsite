@@ -26,8 +26,8 @@ export default function nav() {
           src="/menu_bt.svg"
           alt=""
         />
-        <img src="/social_imgs/linkedin_white.png" alt="" />
-        <img src="/social_imgs/github_white.png" alt="" />
+        <img width="25px" src="/social_imgs/linkedin_white.png" alt="" />
+        <img width="25px" src="/social_imgs/github_white.png" alt="" />
       </div>
       <div id="main_menu" style={{ display: "none", opacity: "0" }}>
         <ul onClick={handleMenu}>

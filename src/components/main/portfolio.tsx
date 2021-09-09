@@ -75,7 +75,7 @@ export default function Portfolio() {
           <div id="portfolio_slide">
             <section id="portfolio1">
               <picture>
-                <img src="/main/portfolio/defaut.png" alt="" />
+                <img width="300px" src="/main/portfolio/defaut.png" alt="" />
               </picture>
               <div>
                 <h3>Site exemplo 1</h3>
@@ -96,7 +96,7 @@ export default function Portfolio() {
             </section>
             <section id="portfolio2">
               <picture>
-                <img src="/main/portfolio/defaut.png" alt="" />
+                <img width="300px" src="/main/portfolio/defaut.png" alt="" />
               </picture>
               <div>
                 <h3>Site exemplo 2</h3>
@@ -117,7 +117,7 @@ export default function Portfolio() {
             </section>
             <section id="portfolio3">
               <picture>
-                <img src="/main/portfolio/defaut.png" alt="" />
+                <img width="300px" src="/main/portfolio/defaut.png" alt="" />
               </picture>
               <div>
                 <h3>Site exemplo 3</h3>

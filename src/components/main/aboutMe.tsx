@@ -3,7 +3,11 @@ import style from "../../styles/components/main/aboutMe.module.css";
 export default function aboutMe() {
   return (
     <section id="aboutme" className={style.main}>
-      <img src="/main/profile_photo.jfif" alt="Wesley Ricardi profile photo" />
+      <img
+        width="150px"
+        src="/main/profile_photo.jfif"
+        alt="Wesley Ricardi profile photo"
+      />
       <h2>
         Esse sou eu, apaixado por programação <b>&</b> tecnologia
       </h2>
