@@ -40,7 +40,8 @@ header.main > div > h2 {
   text-align: center;
 }
 
-header.main > div > span {
-  display: block;
-  text-align: center;
+header.main > div > p {
+  text-align: center !important;
+  width: var(--container-size);
+  margin: 0 auto;
 }

@@ -1,8 +1,11 @@
 footer.main {
-  padding: 40px 5px;
+  padding: 20px 5px;
   text-align: center;
 }
 
 footer.main > span {
   color: var(--main-color);
+}
+footer.main > div {
+  margin-top: 10px;
 }

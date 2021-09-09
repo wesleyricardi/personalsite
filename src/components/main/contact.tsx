@@ -6,37 +6,76 @@ export default function contact() {
       <h2>Entre em contato</h2>
       <p>Adoraria ouvir sobre o que achou</p>
       <div>
-        <div>
-          <div>
+        <div className={style.social}>
+          <img
+            height="40px"
+            width="40px"
+            src="/social_imgs/whatsapp.png"
+            alt=""
+          />
+          <img
+            height="40px"
+            width="40px"
+            src="/social_imgs/linkedin.png"
+            alt=""
+          />
+          <img
+            height="40px"
+            width="40px"
+            src="/social_imgs/github.png"
+            alt=""
+          />
+        </div>
+        <div className={style.contact}>
+          <div className={style.tel_email}>
             <div>
+              <img
+                height="40px"
+                width="40px"
+                src="/svgs/phone.png"
+                alt="phone icon"
+              />
               <div>
-                <div></div>
+                <h4>Telefone</h4>
+                <span>+55 22 99608-7165</span>
+              </div>
+            </div>
+            <span>
+              <span />
+            </span>
+            <div>
+              <img
+                height="40px"
+                width="40px"
+                src="/svgs/email.png"
+                alt="phone icon"
+              />
+              <div>
+                <h4>E-mail</h4>
+                <span>fale@wesleyricardi.com</span>
               </div>
             </div>
           </div>
-          <span>
-            <span>+55 22 99608 7165</span>
-            <span>fale@wesleyricardi.com</span>
-            <img src="/social_imgs/whatsapp.png" alt="" />
-            <img src="/social_imgs/linkedin.png" alt="" />
-            <img src="/social_imgs/github.png" alt="" />
-            <span>Cabo Frio, RJ - Brasil</span>
-          </span>
+          <form action="">
+            <input type="text" name="name" id="name" placeholder="Nome:*" />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail:*"
+            />
+            <textarea
+              name="texto"
+              id="texto"
+              cols={30}
+              placeholder="Sua mensagem:*"
+              rows={10}
+            ></textarea>
+            <div>
+              <button>Enviar</button>
+            </div>
+          </form>
         </div>
-        <form action="">
-          <input type="text" name="name" id="name" placeholder="Nome:*" />
-          <input type="email" name="email" id="email" placeholder="E-mail:*" />
-          <textarea
-            name="texto"
-            id="texto"
-            cols={30}
-            placeholder="Sua mensagem:*"
-            rows={10}
-          ></textarea>
-          <div>
-            <button>Enviar</button>
-          </div>
-        </form>
       </div>
     </section>
   );

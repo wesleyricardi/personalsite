@@ -4,6 +4,7 @@ export default function Footer() {
   return (
     <footer id="footer" className={style.main}>
       © 2021 - Design by <span>Wesley Ricardi</span>
+      <div>Cabo Frio, RJ - Brasil</div>
     </footer>
   );
 }

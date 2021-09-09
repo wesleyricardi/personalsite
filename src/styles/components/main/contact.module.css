@@ -14,160 +14,175 @@
   text-align: center;
 }
 
-.main > div > div:first-of-type {
-  position: relative;
+.social {
+  width: fit-content;
+  margin: 0 auto 40px;
+}
+
+.social::before,
+.social::after {
+  content: "";
   display: inline-block;
-  width: 335px;
-  height: 335px;
-  margin-right: 100px;
+  width: 130px;
+  height: 16px;
+  border-top: var(--color-dark) 4px solid;
+  margin: 0 19px;
 }
 
-.main > div > div:first-of-type div {
-  position: absolute;
-  border-radius: 50%;
-}
-
-.main > div > div:first-of-type > span {
-  position: absolute;
-  display: block;
-  height: 250px;
-  width: 250px;
-  top: calc(50% - 103px);
-  left: calc(50% - 125px);
-}
-
-.main > div > div:first-of-type > span > span {
-  display: block;
-  margin: 20px;
-}
-
-.main > div > div:first-of-type > span > img {
+.social > img {
   height: 40px;
-  margin: 15px;
+  width: 40px;
+  margin: 0 19px;
 }
 
-.main > div > div:first-of-type > div {
-  height: 335px;
-  width: 335px;
-  background-color: var(--main-color);
-  animation: lds-circle 4.2s linear infinite;
+.contact {
+  display: flex;
+  width: clamp(200px, 100%, 795px);
+  margin: 0 auto;
 }
 
-.main > div > div:first-of-type > div > div {
-  height: 330px;
-  width: 330px;
-  bottom: 0;
-  left: 1px;
-  background-color: var(--secundary-color);
+.tel_email {
+  display: grid !important;
+  align-content: space-evenly;
+  justify-content: center;
+  width: clamp(150px, 100%, 300px);
+  margin-right: 50px;
 }
 
-.main > div > div:first-of-type > div > div > div {
-  height: 315px;
-  width: 315px;
-  bottom: 1px;
-  right: 5px;
-  background-color: var(--main-color);
+.tel_email > div {
+  display: flex;
 }
 
-.main > div > div:first-of-type > div > div > div > div {
-  height: 310px;
-  width: 310px;
-  left: -9px;
-  top: -5px;
-  background-color: var(--color-light);
+.tel_email > div > img {
+  align-self: center;
 }
 
-.main > div > form {
+.tel_email > div > div {
+  width: 70%;
+  margin-left: 50px;
+}
+
+.tel_email > div > div > span {
+  font-style: italic;
+  line-height: 36px;
+}
+
+.tel_email > span > span {
   display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  margin: 0 auto;
+}
+
+.tel_email > span::before,
+.tel_email > span::after {
+  content: "";
+  display: inline-block;
+  width: 35px;
+  height: 4px;
+  border-top: #17171780 1px solid;
+  margin: 0 10px;
+}
+
+.contact > form {
+  display: block;
   width: clamp(200px, 100%, 445px);
   padding: 0 10px;
+  margin: 0 auto;
 }
 
-.main > div > form > input {
+.contact > form > input {
   width: 100%;
   display: block;
 }
 
-.main > div > form > textarea {
+.contact > form > textarea {
   resize: none;
   width: 100%;
 }
 
-.main > div > form > div {
+.contact > form > div {
   background-color: var(--color-dark);
   text-align: right;
   margin-top: -10px;
 }
 
-.main > div > form > div > button {
+.contact > form > div > button {
   bottom: 9px;
   right: 0px;
 }
 
-@keyframes lds-circle {
-  0% {
-    transform: rotate(0deg);
+@media only screen and (max-width: 800px) {
+  .tel_email {
+    margin-right: 20px;
   }
-  100% {
-    transform: rotate(360deg);
+
+  .tel_email > div > div {
+    margin-left: 20px;
   }
 }
 
-@media only screen and (max-width: 1100px) {
-  .main > div > div:first-of-type {
-    margin-right: 50px;
+@media only screen and (max-width: 650px) {
+  .tel_email {
+    margin-right: 0;
   }
-  .main > div {
-    padding-left: 0;
+
+  .tel_email > div > div {
+    margin-left: 10px;
   }
 }
 
-@media only screen and (max-width: 1000px) {
-  .main > div > div:first-of-type {
-    margin-right: 10px;
+@media only screen and (max-width: 600px) {
+  .tel_email {
+    display: none !important;
+  }
+  .social::before,
+  .social::after {
+    width: 90px;
   }
 }
 
-@media only screen and (max-width: 840px) {
-  .main > div {
-    padding: 10px 0px;
+@media only screen and (max-width: 530px) {
+  .social > img {
+    height: 35px;
+    width: 35px;
+    margin: 0 14px;
   }
 
-  .main > div > div:first-of-type div {
+  .social::before,
+  .social::after {
+    height: 14.5px;
+    border-top: var(--color-dark) 3px solid;
+    margin: 0 14px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .social::before,
+  .social::after {
+    width: 65px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .social::before,
+  .social::after {
+    width: 50px;
+  }
+}
+
+@media only screen and (max-width: 345px) {
+  .social::before,
+  .social::after {
+    margin: 0 0;
+  }
+}
+
+@media only screen and (max-width: 345px) {
+  .social::before,
+  .social::after {
     display: none;
-  }
-
-  .main > div > div:first-of-type {
-    height: auto;
-    width: fit-content;
-  }
-
-  .main > div > div:first-of-type > span {
-    width: fit-content;
-    position: relative;
-    top: auto;
-    left: auto;
-    height: auto;
-  }
-
-  .main > div > div:first-of-type > span > span {
-    display: none;
-  }
-
-  .main > div > div:first-of-type > span > img {
-    height: 60px;
-    margin: 15px 35px;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .main > div > div:first-of-type > span > img {
-    margin: 15px;
-  }
-}
-
-@media only screen and (max-width: 300px) {
-  .main > div > div:first-of-type > span > img {
-    height: 40px;
   }
 }

@@ -6,10 +6,10 @@ export default function Header() {
       <div>
         <h1>Hello World</h1>
         <h2>Me chamo Wesley Ricardi</h2>
-        <span>
+        <p>
           Eu sou um desenvolvedor web full stack brasileiro de 26 anos, de uma
           olhada em meu portfolio e se gostar entre em contato comigo
-        </span>
+        </p>
       </div>
     </header>
   );
