@@ -16,53 +16,132 @@ section.main > div {
 }
 
 section.main > div > div {
-  overflow-x: auto;
-}
-
-section.main > div > div > ul {
-  display: flex;
-  flex-wrap: wrap;
   width: var(--container-size);
   margin: 0 auto;
 }
 
-section.main > div > div > ul > li {
+/* EDITANDO ESTILO DO COMPONENTE SLIDE*/
+section.main [data-slide="skills"] > div > div {
+  margin: 0 auto;
+}
+
+section.main [data-slide="skills"] section {
+  width: calc(var(--container-size) / 2) !important;
+  margin: 0 0 !important;
+}
+
+section.main [data-slide="skills"] [data-nav="arrow-left"] {
+  display: none;
+  /* left: -40px !important; */
+  border-color: var(--color-light);
+}
+
+section.main [data-slide="skills"] [data-nav="arrow-right"] {
+  display: none;
+  /* right: -40px !important; */
+  border-color: var(--color-light);
+}
+
+section.main [data-slide="skills"] [data-nav="container"] {
+  display: none;
+}
+/* FIM DA EDICAO DO COMPONENTE SLIDE */
+
+ul.skills {
+  display: inline-block;
+  margin: 0 auto;
+  width: 400px;
+}
+
+ul.skills > li {
   display: inline-grid;
   grid-template-columns: 0.3fr 1fr 1fr;
   position: relative;
   list-style: none;
-  width: 50%;
+  width: 100%;
   font-size: var(--h4-font-size);
   margin: 0.5rem 0;
   padding: 0 20px;
 }
 
-section.main > div > div > ul > li > img {
+ul.skills > li > img {
   max-width: calc(var(--h4-font-size) * 1.5);
   vertical-align: middle;
   margin-right: 10px;
 }
 
-section.main > div > div > ul > li > span {
+ul.skills > li > span {
   display: inline-block;
   justify-self: self-end;
   font-style: italic;
 }
 
-section.main > div > div > ul > li:nth-of-type(2n + 1) > span {
+ul.pleno > li > span {
   color: var(--main-color);
 }
-section.main > div > div > ul > li:nth-of-type(2n + 0) > span {
+ul.junior > li > span {
   color: var(--secundary-color);
 }
 
+@media only screen and (max-width: 900px) {
+  ul.skills {
+    width: 320px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  ul.skills {
+    width: 250px;
+  }
+}
+
 @media only screen and (max-width: 500px) {
-  section.main > div > div > ul {
-    width: 200vw;
+  ul.skills {
+    width: 340px;
   }
 
-  section.main > div > div > ul > li {
-    width: 100vw;
-    padding: 0 50px;
+  section.main [data-slide="skills"] section {
+    width: 100%;
+  }
+
+  section.main [data-slide="skills"] [data-nav="arrow-left"] {
+    display: inline-block;
+    /* left: -40px !important; */
+    border-color: var(--color-light);
+    opacity: 0.2;
+  }
+
+  section.main [data-slide="skills"] [data-nav="arrow-left"]:hover {
+    opacity: 0.5;
+  }
+
+  section.main [data-slide="skills"] [data-nav="arrow-right"] {
+    display: inline-block;
+    /* right: -40px !important; */
+    border-color: var(--color-light);
+    opacity: 0.2;
+  }
+
+  section.main [data-slide="skills"] [data-nav="arrow-right"]:hover {
+    opacity: 0.5;
+  }
+
+  section.main [data-slide="skills"] [data-nav="container"] {
+    display: block;
+  }
+  section.main [data-slide="skills"] [data-nav="container"] > span {
+    background-color: var(--color-light);
+    opacity: 0.2;
+  }
+
+  section.main [data-slide="skills"] [data-nav="container"] > span:hover {
+    background-color: var(--color-light);
+    opacity: 0.5;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  ul.skills {
+    width: 300px;
   }
 }

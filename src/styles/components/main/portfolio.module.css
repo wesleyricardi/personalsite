@@ -1,173 +1,112 @@
 section.main > div:first-of-type {
-  position: relative;
   background-color: var(--color-light);
   color: var(--color-dark) !important;
-  padding: 20px 0;
-  margin-top: 30px;
-  --margin-slide: 900px;
+  padding-top: 25px;
+  padding-bottom: 20px;
 }
 
-section.main > div > div:first-of-type {
-  position: relative;
-  width: calc(100vw - var(--margin-slide));
-  overflow-x: hidden;
-  /*  scroll-behavior: smooth; */
-  margin: 0 auto;
+/* EDITANDO ESTILO DO COMPONENTE SLIDE*/
+section.main [data-slide="portfolio"] {
+  --slide-width: 1000px;
+  --margin-x: auto;
 }
 
-section.main > div > div:first-of-type > div {
+section.main [data-slide="portfolio"] [data-nav="arrow-left"] {
+  left: -40px !important;
+}
+
+section.main [data-slide="portfolio"] [data-nav="arrow-right"] {
+  right: -40px !important;
+}
+/* FIM DA EDICAO DO COMPONENTE SLIDE */
+
+.slide {
   display: flex;
-  width: max-content;
 }
 
-section.main > div > div:first-of-type > div > section {
-  width: calc(100vw - var(--margin-slide));
-  display: flex;
-  /* flex-wrap: wrap; */
-  margin: 0 auto;
-}
-section.main > div > div:first-of-type > div > section > picture > img {
+.slide > picture > img {
   width: 300px;
 }
 
-section.main > div > div:first-of-type > div > section > div {
+.slide > div {
   width: 100%;
-  /* min-width: 400px; */
-  margin: calc(var(--margin-slide) / 20) 0px 0px calc(var(--margin-slide) / 10);
-  padding-left: 5px;
+  margin-left: 25px;
 }
 
-section.main > div > div:first-of-type > div > section > div > h3 {
+.slide > div > h3 {
   font-weight: 400;
   text-align: center;
 }
 
-section.main > div > div:first-of-type > div > section > div > p {
+.slide > div > p {
   width: 100%;
   padding: 0;
 }
 
-section.main > div > div:first-of-type > div > section > div > ul {
+.slide > div > ul {
   margin-left: 30px;
   margin-bottom: 20px;
 }
 
-section.main > div > div:first-of-type > div > section > div > button {
+.slide > div > button {
   display: block;
   margin: 0 auto;
   color: white;
 }
 
-.eclipse {
-  width: fit-content;
-  margin: 20px auto 0;
-}
+@media only screen and (max-width: 1120px) {
+  section.main [data-slide="portfolio"] [data-nav="arrow-left"] {
+    left: 10px !important;
+  }
 
-.eclipse > a {
-  display: inline-block;
-  height: 15px;
-  width: 15px;
-  background-color: #17171780;
-  border-radius: 50%;
-  margin: 0 5px;
-}
-
-.eclipse > a:hover {
-  background-color: #171717;
-}
-
-.arrowleft {
-  left: calc(var(--margin-slide) / 3);
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-  border-color: #17171780;
-}
-
-.arrowright {
-  right: calc(var(--margin-slide) / 3);
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  border-color: #17171780;
-}
-
-.arrowleft:hover,
-.arrowright:hover {
-  border-color: #171717;
-}
-
-@media only screen and (max-width: 1700px) {
-  section.main > div:first-of-type {
-    --margin-slide: 600px;
+  section.main [data-slide="portfolio"] [data-nav="arrow-right"] {
+    right: 10px !important;
   }
 }
 
-@media only screen and (max-width: 1500px) {
-  section.main > div:first-of-type {
-    --margin-slide: 400px;
+@media only screen and (max-width: 1050px) {
+  section.main [data-slide="portfolio"] {
+    --slide-width: 100%;
   }
-}
-
-@media only screen and (max-width: 1300px) {
-  section.main > div:first-of-type {
-    --margin-slide: 200px;
-  }
-}
-
-@media only screen and (max-width: 1100px) {
-  section.main > div:first-of-type {
-    --margin-slide: 100px;
-  }
-}
-
-@media only screen and (max-width: 1000px) {
-  section.main > div:first-of-type {
-    --margin-slide: 50px;
-  }
-}
-
-@media only screen and (max-width: 950px) {
-  section.main > div > div:first-of-type > div > section > picture > img {
-    width: 270px;
+  .slide {
+    width: 100vw;
+    padding-right: 50px;
   }
 }
 
 @media only screen and (max-width: 750px) {
-  section.main > div > div:first-of-type > div > section > picture > img {
+  .slide > picture > img {
     width: 250px;
   }
 }
 
-@media only screen and (max-width: 700px) {
-  section.main > div > div:first-of-type {
-    width: 100%;
+@media only screen and (max-width: 650px) {
+  .slide {
+    padding-right: 30px;
+  }
+  .slide > div {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  section.main > div:first-of-type {
+    padding-top: 0;
+  }
+  .slide {
+    display: block;
+  }
+  .slide {
+    width: 100vw;
+    padding-right: 50px;
+  }
+  .slide > div {
+    margin-left: 20px;
   }
 
-  section.main > div > div:first-of-type > div > section {
-    flex-wrap: wrap;
-  }
-  section.main > div > div:first-of-type > div > section > picture > img {
+  .slide > picture > img {
     width: 100vw;
     height: 300px;
     object-fit: cover;
-  }
-
-  section.main > div > div:first-of-type > div > section > div > h3 {
-    margin-top: 10px;
-  }
-
-  section.main > div:first-of-type {
-    --margin-slide: 0px;
-  }
-
-  .arrowleft {
-    left: 15px;
-  }
-
-  .arrowright {
-    right: 15px;
-  }
-
-  section.main > div:first-of-type {
-    padding: 0 0 20px;
   }
 }

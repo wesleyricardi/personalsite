@@ -1,7 +1,10 @@
 import { useEffect } from "react";
 import Beounce from "./Beounce";
 
-const OnResize = (fn: () => void, delay: number | null = null): void => {
+export default function useOnResize(
+  fn: () => void,
+  delay: number | null = null
+): void {
   useEffect(() => {
     let action = fn;
 
@@ -14,8 +17,4 @@ const OnResize = (fn: () => void, delay: number | null = null): void => {
     window.addEventListener("resize", action);
     return () => window.removeEventListener("resize", action);
   }, []);
-};
-
-export function useOnResize() {
-  return OnResize;
 }
