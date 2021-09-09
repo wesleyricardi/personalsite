@@ -10,19 +10,19 @@ export default function contact() {
           <img
             height="40px"
             width="40px"
-            src="/social_imgs/whatsapp.png"
+            src="/social_imgs/whatsapp.svg"
             alt=""
           />
           <img
             height="40px"
             width="40px"
-            src="/social_imgs/linkedin.png"
+            src="/social_imgs/linkedin.svg"
             alt=""
           />
           <img
             height="40px"
             width="40px"
-            src="/social_imgs/github.png"
+            src="/social_imgs/github.svg"
             alt=""
           />
         </div>
@@ -32,7 +32,7 @@ export default function contact() {
               <img
                 height="40px"
                 width="40px"
-                src="/svgs/phone.png"
+                src="/svgs/phone.svg"
                 alt="phone icon"
               />
               <div>
@@ -47,7 +47,7 @@ export default function contact() {
               <img
                 height="40px"
                 width="40px"
-                src="/svgs/email.png"
+                src="/svgs/email.svg"
                 alt="phone icon"
               />
               <div>
