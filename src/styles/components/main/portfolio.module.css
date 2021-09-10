@@ -9,14 +9,7 @@ section.main > div:first-of-type {
 section.main [data-slide="portfolio"] {
   --slide-width: 1000px;
   --margin-x: auto;
-}
-
-section.main [data-slide="portfolio"] [data-nav="arrow-left"] {
-  left: -40px !important;
-}
-
-section.main [data-slide="portfolio"] [data-nav="arrow-right"] {
-  right: -40px !important;
+  --arrow-X: -40px;
 }
 /* FIM DA EDICAO DO COMPONENTE SLIDE */
 
@@ -55,12 +48,8 @@ section.main [data-slide="portfolio"] [data-nav="arrow-right"] {
 }
 
 @media only screen and (max-width: 1120px) {
-  section.main [data-slide="portfolio"] [data-nav="arrow-left"] {
-    left: 10px !important;
-  }
-
-  section.main [data-slide="portfolio"] [data-nav="arrow-right"] {
-    right: 10px !important;
+  section.main [data-slide="portfolio"] {
+    --arrow-X: 15px;
   }
 }
 
