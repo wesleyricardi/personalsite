@@ -1,0 +1,77 @@
+{
+  "header": {
+    "welcome": "Hello World",
+    "title": "Me chamo Wesley Ricardi",
+    "text": "Eu sou um desenvolvedor web full stack brasileiro de 26 anos, de uma olhada em meu portfolio e se gostar entre em contato comigo"
+  },
+  "main": {
+    "aboutMe": {
+      "photo": "/main/profile_photo.jfif",
+      "title": "Esse sou eu, apaixado por programação & tecnologia",
+      "text": " Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim."
+    },
+    "skills": {
+      "title": "Minhas habilidades",
+      "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes"
+    },
+    "portfolio": {
+      "title": "Meu portfólio",
+      "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes",
+      "projects": [
+        {
+          "name": "Site 1",
+          "photo": "/main/portfolio/defaut.png",
+          "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa",
+          "list": [
+            "Lorem ipsum dolor",
+            "Lorem ipsum dolor",
+            "Lorem ipsum dolor",
+            "Lorem ipsum dolor"
+          ]
+        },
+        {
+          "name": "Site 2",
+          "photo": "/main/portfolio/defaut.png",
+          "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa",
+          "list": [
+            "Lorem ipsum dolor",
+            "Lorem ipsum dolor",
+            "Lorem ipsum dolor",
+            "Lorem ipsum dolor"
+          ]
+        },
+        {
+          "name": "Site 3",
+          "photo": "/main/portfolio/defaut.png",
+          "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa",
+          "list": [
+            "Lorem ipsum dolor",
+            "Lorem ipsum dolor",
+            "Lorem ipsum dolor",
+            "Lorem ipsum dolor"
+          ]
+        }
+      ]
+    },
+    "contact": {
+      "title": "Entre em contato",
+      "text": "Adoraria ouvir sobre o que achou",
+      "phone": "Telefone",
+      "number": "+55 22 99608-7165",
+      "email": "fale@wesley.ricardi.com",
+      "linkedin": "https://linkedin.com",
+      "github": "https://github.com",
+      "whatsapp": "wa.me/5522996087165",
+      "form": {
+        "name": "Nome:*",
+        "email": "E-mail:*",
+        "message": "Digite sua mensagem:*",
+        "button": "Enviar"
+      }
+    }
+  },
+  "footer": {
+    "autor": "Wesley Ricardi",
+    "localization": "Cabo Frio, RJ - Brasil"
+  }
+}

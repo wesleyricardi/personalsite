@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Beounce from "./Beounce";
+import debounce from "./debounce";
 
 export default function useOnResize(
   fn: () => void,
@@ -9,7 +9,7 @@ export default function useOnResize(
     let action = fn;
 
     if (delay) {
-      action = Beounce(() => {
+      action = debounce(() => {
         fn();
       }, delay);
     }

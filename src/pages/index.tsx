@@ -3,8 +3,22 @@ import Nav from "../components/nav";
 import Header from "../components/header";
 import Main from "../components/main";
 import Footer from "../components/footer";
+import { useEffect, useState } from "react";
+import pt_BR from "../language/pt_BR.json";
+import en_US from "../language/en_US.json";
+import { languages } from "../language/interface";
+import debounce from "../components/extras/debounce";
 
 export default function Index() {
+  const [language, setLanguage] = useState<languages>(pt_BR);
+
+  useEffect(() => {
+    const language: string = navigator.language.slice(0, 2);
+    if (language === "pt") setLanguage(pt_BR);
+    else if (language === "en") setLanguage(en_US);
+    else setLanguage(en_US);
+  }, []);
+
   return (
     <>
       <Head>
@@ -23,8 +37,8 @@ export default function Index() {
         />
       </Head>
       <Nav />
-      <Header />
-      <Main />
+      <Header header={language.header} />
+      <Main main={language.main} />
       <Footer />
     </>
   );

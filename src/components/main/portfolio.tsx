@@ -1,82 +1,43 @@
 import style from "../../styles/components/main/portfolio.module.css";
 import Slide from "../extras/slide";
 
-export default function Portfolio() {
+type Props = {
+  portfolio: {
+    title: string;
+    text: string;
+    projects: {
+      name: string;
+      photo: string;
+      description: string;
+      list: string[];
+    }[];
+  };
+};
+
+export default function Portfolio({ portfolio }: Props) {
   return (
     <section id="portfolio" className={style.main}>
-      <h2>Meu portfólio</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
-        dis parturient montes
-      </p>
+      <h2>{portfolio.title}</h2>
+      <p>{portfolio.text}</p>
       <div>
         <Slide name="portfolio">
-          {[
-            <div key="site exemplo 1" className={style.slide}>
+          {portfolio.projects.map((project, index) => (
+            <div key={"project_" + index} className={style.slide}>
               <picture>
-                <img width="300px" src="/main/portfolio/defaut.png" alt="" />
+                <img width="300px" src={project.photo} alt="" />
               </picture>
               <div>
-                <h3>Site exemplo 1</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  Aenean commodo ligula eget dolor. Aenean massa
-                </p>
+                <h3>{project.name}</h3>
+                <p>{project.description}</p>
                 <ul>
-                  <li>Lorem ipsum dolor</li>
-                  <li>Lorem ipsum dolor</li>
-                  <li>Lorem ipsum dolor</li>
-                  <li>Lorem ipsum dolor</li>
-                  <li>Lorem ipsum dolor</li>
+                  {project.list.map((list, i) => (
+                    <li key={index + "_list_" + i}>{list}</li>
+                  ))}
                 </ul>
-
-                <button>Visitar</button>
-              </div>{" "}
-            </div>,
-            <div key="site exemplo 2" className={style.slide}>
-              <picture>
-                <img width="300px" src="/main/portfolio/defaut.png" alt="" />
-              </picture>
-              <div>
-                <h3>Site exemplo 2</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  Aenean commodo ligula eget dolor. Aenean massa
-                </p>
-                <ul>
-                  <li>Lorem ipsum dolor</li>
-                  <li>Lorem ipsum dolor</li>
-                  <li>Lorem ipsum dolor</li>
-                  <li>Lorem ipsum dolor</li>
-                  <li>Lorem ipsum dolor</li>
-                </ul>
-
                 <button>Visitar</button>
               </div>
-            </div>,
-            <div key="site exemplo 3" className={style.slide}>
-              <picture>
-                <img width="300px" src="/main/portfolio/defaut.png" alt="" />
-              </picture>
-              <div>
-                <h3>Site exemplo 3</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  Aenean commodo ligula eget dolor. Aenean massa
-                </p>
-                <ul>
-                  <li>Lorem ipsum dolor</li>
-                  <li>Lorem ipsum dolor</li>
-                  <li>Lorem ipsum dolor</li>
-                  <li>Lorem ipsum dolor</li>
-                  <li>Lorem ipsum dolor</li>
-                </ul>
-
-                <button>Visitar</button>
-              </div>
-            </div>,
-          ]}
+            </div>
+          ))}
         </Slide>
       </div>
     </section>

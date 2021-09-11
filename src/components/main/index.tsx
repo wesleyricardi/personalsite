@@ -3,14 +3,21 @@ import AboutMe from "./aboutMe";
 import Contact from "./contact";
 import Portfolio from "./portfolio";
 import Skills from "./skills";
+import { main } from "../../language/interface";
 
-export default function Main() {
+type Props = {
+  main: main;
+};
+
+export default function Main({
+  main: { aboutMe, skills, portfolio, contact },
+}: Props) {
   return (
     <main id="main" className={style.main}>
-      <AboutMe />
-      <Skills />
-      <Portfolio />
-      <Contact />
+      <AboutMe aboutMe={aboutMe} />
+      <Skills skills={skills} />
+      <Portfolio portfolio={portfolio} />
+      <Contact contact={contact} />
     </main>
   );
 }

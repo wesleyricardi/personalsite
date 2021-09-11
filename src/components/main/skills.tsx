@@ -1,16 +1,19 @@
 import style from "../../styles/components/main/skills.module.css";
 import Slide from "../extras/slide";
 
-export default function skills() {
+type Props = {
+  skills: {
+    title: string;
+    text: string;
+  };
+};
+
+export default function skills({ skills }: Props) {
   return (
     <section id="skills" className={style.main}>
       <div>
-        <h2>Minhas habilidades</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-          commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
-          et magnis dis parturient montes
-        </p>
+        <h2>{skills.title}</h2>
+        <p>{skills.text}</p>
         <div>
           <Slide name="skills">
             {[

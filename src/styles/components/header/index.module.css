@@ -26,6 +26,24 @@ header.main > div > h1 {
   text-align: center;
 }
 
+header.main > div > h1::after {
+  content: "";
+  padding: 10px 0 2px;
+  border-right: var(--color-light) 3px solid;
+  animation: blink 1s infinite linear;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
 header.main > div > h2 {
   font-weight: 300;
   margin: 0 auto;

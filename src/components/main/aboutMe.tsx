@@ -1,23 +1,23 @@
 import style from "../../styles/components/main/aboutMe.module.css";
 
-export default function aboutMe() {
+type Props = {
+  aboutMe: {
+    photo: string;
+    title: string;
+    text: string;
+  };
+};
+
+export default function aboutMe({ aboutMe }: Props) {
   return (
     <section id="aboutme" className={style.main}>
       <img
         width="150px"
-        src="/main/profile_photo.jfif"
+        src={aboutMe.photo}
         alt="Wesley Ricardi profile photo"
       />
-      <h2>
-        Esse sou eu, apaixado por programação <b>&</b> tecnologia
-      </h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
-        dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-        ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
-        quis enim.
-      </p>
+      <h2>{aboutMe.title}</h2>
+      <p>{aboutMe.text}</p>
     </section>
   );
 }

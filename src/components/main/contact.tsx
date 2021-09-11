@@ -1,10 +1,29 @@
 import style from "../../styles/components/main/contact.module.css";
 
-export default function contact() {
+type Props = {
+  contact: {
+    title: string;
+    text: string;
+    phone: string;
+    number: string;
+    email: string;
+    linkedin: string;
+    github: string;
+    whatsapp: string;
+    form: {
+      name: string;
+      email: string;
+      message: string;
+      button: string;
+    };
+  };
+};
+
+export default function contact({ contact }: Props) {
   return (
     <section id="contact" className={style.main}>
-      <h2>Entre em contato</h2>
-      <p>Adoraria ouvir sobre o que achou</p>
+      <h2>{contact.title}</h2>
+      <p>{contact.title}</p>
       <div>
         <div className={style.social}>
           <img
@@ -36,8 +55,8 @@ export default function contact() {
                 alt="phone icon"
               />
               <div>
-                <h4>Telefone</h4>
-                <span>+55 22 99608-7165</span>
+                <h4>{contact.phone}</h4>
+                <span>{contact.number}</span>
               </div>
             </div>
             <span>
@@ -52,27 +71,32 @@ export default function contact() {
               />
               <div>
                 <h4>E-mail</h4>
-                <span>fale@wesleyricardi.com</span>
+                <span>{contact.email}</span>
               </div>
             </div>
           </div>
           <form action="">
-            <input type="text" name="name" id="name" placeholder="Nome:*" />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder={contact.form.name}
+            />
             <input
               type="email"
               name="email"
               id="email"
-              placeholder="E-mail:*"
+              placeholder={contact.form.email}
             />
             <textarea
               name="texto"
               id="texto"
               cols={30}
-              placeholder="Sua mensagem:*"
+              placeholder={contact.form.message}
               rows={10}
             ></textarea>
             <div>
-              <button>Enviar</button>
+              <button>{contact.form.button}</button>
             </div>
           </form>
         </div>
