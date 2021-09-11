@@ -8,47 +8,57 @@
     "aboutMe": {
       "photo": "/main/profile_photo.jfif",
       "title": "Esse sou eu, apaixado por programação & tecnologia",
-      "text": " Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim."
+      "text": "Desde de criança eu era louco por computadores e tecnologia, muito curioso para saber como funciona, então novinho fiz um curso de manutenção de computadores e redes, era o mais novo da turma, mais tarde eu queria fazer um site, daí comecei a estudar, desde de então não parei."
     },
     "skills": {
       "title": "Minhas habilidades",
-      "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes"
+      "text": "Todas as tecnologia e linguagem abaixo, adquiri de forma autodita, queria fazer uma coisa, eu pesquisava como fazer, não importava a dificuldade, quanto mais dificil mais eu me interessava"
     },
     "portfolio": {
       "title": "Meu portfólio",
-      "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes",
+      "text": "Desevolvi esse portfolio recentemente, usando as tecnologias mais recente, comecei quando decidi entrar profissionalmente, pois até então programação era meu hobby",
       "projects": [
         {
-          "name": "Site 1",
+          "name": "E-menu",
           "photo": "/main/portfolio/defaut.png",
-          "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa",
+          "description": "É uma ideia que veio em ajudar restaurantes e seus clientes, usei nessa aplicação React + Next + Typescript / API Rest, ja as funções da aplicação são:",
           "list": [
-            "Lorem ipsum dolor",
-            "Lorem ipsum dolor",
-            "Lorem ipsum dolor",
-            "Lorem ipsum dolor"
+            "Realizar pedido da mesa, atraves de um QR code",
+            "Cadastro e login do cliente para proteção e identificar quem realizou o pedido dos itens",
+            "A conta quem abre é o cliente, ele precisa definir uma senha e passar para as outras pessoas na mesa",
+            "Controle da sua propria conta, pode ver todos os itens pedidos e os quais ele pediu",
+            "Total individual ou total da mesa"
           ]
         },
         {
-          "name": "Site 2",
+          "name": "WebOS",
           "photo": "/main/portfolio/defaut.png",
-          "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa",
+          "description": "Desenvolvi essa aplicação com React + Next + Typescript buscando uma experencia de um sistema operacional no browser, para uma navegação 'multiwindow', meu objetivo é usar como base para aplicações Extranet, as funções são:",
           "list": [
-            "Lorem ipsum dolor",
-            "Lorem ipsum dolor",
-            "Lorem ipsum dolor",
-            "Lorem ipsum dolor"
+            "Arraste, minimizar, maximizar, mudar tamanho da janela",
+            "Cada componente React pode ser usado como uma janela, precisando somente vincular no sistema, apartir dai estará disponivel no menu start",
+            "É possivel adicionar atalhos, no startMenu, destktop",
+            "Busca de apps",
+            "Notificação",
+            "Entre outras funções"
           ]
         },
         {
-          "name": "Site 3",
+          "name": "API",
           "photo": "/main/portfolio/defaut.png",
-          "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa",
+          "description": "Buscando fazer uma API, desenvolvi um tipo de framwork MVC com PHP 8, para facilitar nas minhas futuras construções de API Rest",
+          "list": ["CRUD com banco de dados Mysql", "Rotas", "JWT"]
+        },
+        {
+          "name": "Meu site pessoal",
+          "photo": "/main/portfolio/defaut.png",
+          "description": "É exatamente esse site, meu objetivo aqui, foi um site, leve, bonito e moderno, possui nota 91 mobile e 100 no desktop no https://developers.google.com/speed/pagespeed/insights/ foi desenvolvido do zero não usei nada além de React, NextJS e Typescript",
           "list": [
-            "Lorem ipsum dolor",
-            "Lorem ipsum dolor",
-            "Lorem ipsum dolor",
-            "Lorem ipsum dolor"
+            "Componente de carrousel",
+            "Responsivel",
+            "Facilmente editavel",
+            "Traducao facilitada",
+            "Idiomas ingles e portugues, baseado linguagem do browser"
           ]
         }
       ]
@@ -59,8 +69,8 @@
       "phone": "Telefone",
       "number": "+55 22 99608-7165",
       "email": "fale@wesley.ricardi.com",
-      "linkedin": "https://linkedin.com",
-      "github": "https://github.com",
+      "linkedin": "https://www.linkedin.com/in/wesley-ricardi-02729b203/",
+      "github": "https://github.com/wesleyricard",
       "whatsapp": "wa.me/5522996087165",
       "form": {
         "name": "Nome:*",
