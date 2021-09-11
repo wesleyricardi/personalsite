@@ -20,7 +20,7 @@
       "projects": [
         {
           "name": "E-menu",
-          "photo": "/main/portfolio/defaut.png",
+          "photo": "/main/portfolio/emenu.jpg",
           "description": "É uma ideia que veio em ajudar restaurantes e seus clientes, usei nessa aplicação React + Next + Typescript / API Rest, ja as funções da aplicação são:",
           "list": [
             "Realizar pedido da mesa, atraves de um QR code",
@@ -32,7 +32,7 @@
         },
         {
           "name": "WebOS",
-          "photo": "/main/portfolio/defaut.png",
+          "photo": "/main/portfolio/webos.jpg",
           "description": "Desenvolvi essa aplicação com React + Next + Typescript buscando uma experencia de um sistema operacional no browser, para uma navegação 'multiwindow', meu objetivo é usar como base para aplicações Extranet, as funções são:",
           "list": [
             "Arraste, minimizar, maximizar, mudar tamanho da janela",
@@ -45,13 +45,13 @@
         },
         {
           "name": "API",
-          "photo": "/main/portfolio/defaut.png",
+          "photo": "/main/portfolio/api.png",
           "description": "Buscando fazer uma API, desenvolvi um tipo de framwork MVC com PHP 8, para facilitar nas minhas futuras construções de API Rest",
           "list": ["CRUD com banco de dados Mysql", "Rotas", "JWT"]
         },
         {
           "name": "Meu site pessoal",
-          "photo": "/main/portfolio/defaut.png",
+          "photo": "/main/portfolio/personalsite.jpg",
           "description": "É exatamente esse site, meu objetivo aqui, foi um site, leve, bonito e moderno, possui nota 91 mobile e 100 no desktop no https://developers.google.com/speed/pagespeed/insights/ foi desenvolvido do zero não usei nada além de React, NextJS e Typescript",
           "list": [
             "Componente de carrousel",
