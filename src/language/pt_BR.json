@@ -1,4 +1,18 @@
 {
+  "head": {
+    "title": "Dev. Wesley Ricardi - Desenvolvedor full stack",
+    "description": "Desenvolvedor Web pleno full stack"
+  },
+  "nav": {
+    "menu": [
+      { "link": "#aboutme", "section": "Sobre mim" },
+      { "link": "#skills", "section": "Habilidades" },
+      { "link": "#portfolio", "section": "Portfólio" },
+      { "link": "#contact", "section": "Contato" }
+    ],
+    "linkedin": "https://www.linkedin.com/in/wesley-ricardi-02729b203/",
+    "github": "https://github.com/wesleyricard"
+  },
   "header": {
     "welcome": "Hello World",
     "title": "Me chamo Wesley Ricardi",
@@ -12,7 +26,59 @@
     },
     "skills": {
       "title": "Minhas habilidades",
-      "text": "Todas as tecnologia e linguagem abaixo, adquiri de forma autodita, queria fazer uma coisa, eu pesquisava como fazer, não importava a dificuldade, quanto mais dificil mais eu me interessava"
+      "text": "Todas as tecnologia e linguagem abaixo, adquiri de forma autodita, queria fazer uma coisa, eu pesquisava como fazer, não importava a dificuldade, quanto mais dificil mais eu me interessava",
+      "list": [
+        {
+          "image": "/main/skills_icon/html5.png",
+          "skill_name": "HTML 5",
+          "seniority": { "level": 2, "name": "Pleno" }
+        },
+        {
+          "image": "/main/skills_icon/ccs3.png",
+          "skill_name": "CSS 3",
+          "seniority": { "level": 2, "name": "Pleno" }
+        },
+        {
+          "image": "/main/skills_icon/php8.svg",
+          "skill_name": "PHP 8",
+          "seniority": { "level": 2, "name": "Pleno" }
+        },
+        {
+          "image": "/main/skills_icon/js.png",
+          "skill_name": "Javascript",
+          "seniority": { "level": 2, "name": "Pleno" }
+        },
+        {
+          "image": "/main/skills_icon/api.png",
+          "skill_name": "API Rest",
+          "seniority": { "level": 2, "name": "Pleno" }
+        },
+        {
+          "image": "/main/skills_icon/node.svg",
+          "skill_name": "Node js",
+          "seniority": { "level": 1, "name": "Júnior" }
+        },
+        {
+          "image": "/main/skills_icon/next.png",
+          "skill_name": "Next js",
+          "seniority": { "level": 1, "name": "Júnior" }
+        },
+        {
+          "image": "/main/skills_icon/react.svg",
+          "skill_name": "React js",
+          "seniority": { "level": 1, "name": "Júnior" }
+        },
+        {
+          "image": "/main/skills_icon/typescript.svg",
+          "skill_name": "Typescript",
+          "seniority": { "level": 1, "name": "Júnior" }
+        },
+        {
+          "image": "/main/skills_icon/sql.png",
+          "skill_name": "Databe SQL",
+          "seniority": { "level": 1, "name": "Júnior" }
+        }
+      ]
     },
     "portfolio": {
       "title": "Meu portfólio",
@@ -28,7 +94,8 @@
             "A conta quem abre é o cliente, ele precisa definir uma senha e passar para as outras pessoas na mesa",
             "Controle da sua propria conta, pode ver todos os itens pedidos e os quais ele pediu",
             "Total individual ou total da mesa"
-          ]
+          ],
+          "link": "#"
         },
         {
           "name": "WebOS",
@@ -41,13 +108,15 @@
             "Busca de apps",
             "Notificação",
             "Entre outras funções"
-          ]
+          ],
+          "link": "#"
         },
         {
           "name": "API",
           "photo": "/main/portfolio/api.png",
           "description": "Buscando fazer uma API, desenvolvi um tipo de framwork MVC com PHP 8, para facilitar nas minhas futuras construções de API Rest",
-          "list": ["CRUD com banco de dados Mysql", "Rotas", "JWT"]
+          "list": ["CRUD com banco de dados Mysql", "Rotas", "JWT"],
+          "link": "#"
         },
         {
           "name": "Meu site pessoal",
@@ -59,9 +128,11 @@
             "Facilmente editavel",
             "Traducao facilitada",
             "Idiomas ingles e portugues, baseado linguagem do browser"
-          ]
+          ],
+          "link": "#"
         }
-      ]
+      ],
+      "buttonVisit": "Visitar"
     },
     "contact": {
       "title": "Entre em contato",
@@ -81,7 +152,7 @@
     }
   },
   "footer": {
-    "autor": "Wesley Ricardi",
+    "copyright": "© 2021",
     "localization": "Cabo Frio, RJ - Brasil"
   }
 }

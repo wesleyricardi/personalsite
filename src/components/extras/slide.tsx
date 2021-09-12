@@ -149,7 +149,6 @@ export default function Slide({
 
     if (clickPosition) {
       const mouseMove = clickoutPosition - clickPosition;
-      console.log(clickoutPosition);
       if (mouseMove) {
         if (mouseMove < -100) {
           if (actualSlide + 1 <= lastSlide) {

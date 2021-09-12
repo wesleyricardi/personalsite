@@ -7,7 +7,6 @@ import { useEffect, useState } from "react";
 import pt_BR from "../language/pt_BR.json";
 import en_US from "../language/en_US.json";
 import { languages } from "../language/interface";
-import debounce from "../components/extras/debounce";
 
 export default function Index() {
   const [language, setLanguage] = useState<languages>(pt_BR);
@@ -22,8 +21,8 @@ export default function Index() {
   return (
     <>
       <Head>
-        <title>Dev. Wesley Ricardi - Desenvolvedor full stack</title>
-        <meta name="description" content="Desenvolvedor Web pleno full stack" />
+        <title>{language.head.title}</title>
+        <meta name="description" content={language.head.description} />
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
@@ -36,10 +35,10 @@ export default function Index() {
           rel="stylesheet"
         />
       </Head>
-      <Nav />
+      <Nav nav={language.nav} />
       <Header header={language.header} />
       <Main main={language.main} />
-      <Footer />
+      <Footer footer={language.footer} />
     </>
   );
 }

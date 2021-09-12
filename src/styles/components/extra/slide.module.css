@@ -47,6 +47,7 @@ div.main > div:first-of-type > div > section {
   position: relative;
   width: var(--slide-width);
   margin: 0 auto;
+  align-self: center;
 }
 
 .eclipse {

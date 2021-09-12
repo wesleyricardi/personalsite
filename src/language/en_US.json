@@ -1,4 +1,18 @@
 {
+  "head": {
+    "title": "Dev. Wesley Ricardi - Desenvolvedor full stack",
+    "description": "Desenvolvedor Web pleno full stack"
+  },
+  "nav": {
+    "menu": [
+      { "link": "#aboutme", "section": "Sobre mim" },
+      { "link": "#skills", "section": "Habilidades" },
+      { "link": "#portfolio", "section": "Portfólio" },
+      { "link": "#contact", "section": "Contato" }
+    ],
+    "linkedin": "https://www.linkedin.com/in/wesley-ricardi-02729b203/",
+    "github": "https://github.com/wesleyricard"
+  },
   "header": {
     "welcome": "Hello World",
     "title": "Me chamo Wesley Ricardi",
@@ -8,50 +22,117 @@
     "aboutMe": {
       "photo": "/main/profile_photo.jfif",
       "title": "Esse sou eu, apaixado por programação & tecnologia",
-      "text": " Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim."
+      "text": "Desde de criança eu era louco por computadores e tecnologia, muito curioso para saber como funciona, então novinho fiz um curso de manutenção de computadores e redes, era o mais novo da turma, mais tarde eu queria fazer um site, daí comecei a estudar, desde de então não parei."
     },
     "skills": {
       "title": "Minhas habilidades",
-      "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes"
+      "text": "Todas as tecnologia e linguagem abaixo, adquiri de forma autodita, queria fazer uma coisa, eu pesquisava como fazer, não importava a dificuldade, quanto mais dificil mais eu me interessava",
+      "list": [
+        {
+          "image": "/main/skills_icon/html5.png",
+          "skill_name": "HTML 5",
+          "seniority": { "level": 2, "name": "Pleno" }
+        },
+        {
+          "image": "/main/skills_icon/ccs3.png",
+          "skill_name": "CSS 3",
+          "seniority": { "level": 2, "name": "Pleno" }
+        },
+        {
+          "image": "/main/skills_icon/php8.svg",
+          "skill_name": "PHP 8",
+          "seniority": { "level": 2, "name": "Pleno" }
+        },
+        {
+          "image": "/main/skills_icon/js.png",
+          "skill_name": "Javascript",
+          "seniority": { "level": 2, "name": "Pleno" }
+        },
+        {
+          "image": "/main/skills_icon/api.png",
+          "skill_name": "API Rest",
+          "seniority": { "level": 2, "name": "Pleno" }
+        },
+        {
+          "image": "/main/skills_icon/node.svg",
+          "skill_name": "Node js",
+          "seniority": { "level": 1, "name": "Júnior" }
+        },
+        {
+          "image": "/main/skills_icon/next.png",
+          "skill_name": "Next js",
+          "seniority": { "level": 1, "name": "Júnior" }
+        },
+        {
+          "image": "/main/skills_icon/react.svg",
+          "skill_name": "React js",
+          "seniority": { "level": 1, "name": "Júnior" }
+        },
+        {
+          "image": "/main/skills_icon/typescript.svg",
+          "skill_name": "Typescript",
+          "seniority": { "level": 1, "name": "Júnior" }
+        },
+        {
+          "image": "/main/skills_icon/sql.png",
+          "skill_name": "Databe SQL",
+          "seniority": { "level": 1, "name": "Júnior" }
+        }
+      ]
     },
     "portfolio": {
       "title": "Meu portfólio",
-      "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes",
+      "text": "Desevolvi esse portfolio recentemente, usando as tecnologias mais recente, comecei quando decidi entrar profissionalmente, pois até então programação era meu hobby",
       "projects": [
         {
-          "name": "Site 1",
-          "photo": "/main/portfolio/defaut.png",
-          "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa",
+          "name": "E-menu",
+          "photo": "/main/portfolio/emenu.jpg",
+          "description": "É uma ideia que veio em ajudar restaurantes e seus clientes, usei nessa aplicação React + Next + Typescript / API Rest, ja as funções da aplicação são:",
           "list": [
-            "Lorem ipsum dolor",
-            "Lorem ipsum dolor",
-            "Lorem ipsum dolor",
-            "Lorem ipsum dolor"
-          ]
+            "Realizar pedido da mesa, atraves de um QR code",
+            "Cadastro e login do cliente para proteção e identificar quem realizou o pedido dos itens",
+            "A conta quem abre é o cliente, ele precisa definir uma senha e passar para as outras pessoas na mesa",
+            "Controle da sua propria conta, pode ver todos os itens pedidos e os quais ele pediu",
+            "Total individual ou total da mesa"
+          ],
+          "link": "#"
         },
         {
-          "name": "Site 2",
-          "photo": "/main/portfolio/defaut.png",
-          "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa",
+          "name": "WebOS",
+          "photo": "/main/portfolio/webos.jpg",
+          "description": "Desenvolvi essa aplicação com React + Next + Typescript buscando uma experencia de um sistema operacional no browser, para uma navegação 'multiwindow', meu objetivo é usar como base para aplicações Extranet, as funções são:",
           "list": [
-            "Lorem ipsum dolor",
-            "Lorem ipsum dolor",
-            "Lorem ipsum dolor",
-            "Lorem ipsum dolor"
-          ]
+            "Arraste, minimizar, maximizar, mudar tamanho da janela",
+            "Cada componente React pode ser usado como uma janela, precisando somente vincular no sistema, apartir dai estará disponivel no menu start",
+            "É possivel adicionar atalhos, no startMenu, destktop",
+            "Busca de apps",
+            "Notificação",
+            "Entre outras funções"
+          ],
+          "link": "#"
         },
         {
-          "name": "Site 3",
-          "photo": "/main/portfolio/defaut.png",
-          "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa",
+          "name": "API",
+          "photo": "/main/portfolio/api.png",
+          "description": "Buscando fazer uma API, desenvolvi um tipo de framwork MVC com PHP 8, para facilitar nas minhas futuras construções de API Rest",
+          "list": ["CRUD com banco de dados Mysql", "Rotas", "JWT"],
+          "link": "#"
+        },
+        {
+          "name": "Meu site pessoal",
+          "photo": "/main/portfolio/personalsite.jpg",
+          "description": "É exatamente esse site, meu objetivo aqui, foi um site, leve, bonito e moderno, possui nota 91 mobile e 100 no desktop no https://developers.google.com/speed/pagespeed/insights/ foi desenvolvido do zero não usei nada além de React, NextJS e Typescript",
           "list": [
-            "Lorem ipsum dolor",
-            "Lorem ipsum dolor",
-            "Lorem ipsum dolor",
-            "Lorem ipsum dolor"
-          ]
+            "Componente de carrousel",
+            "Responsivel",
+            "Facilmente editavel",
+            "Traducao facilitada",
+            "Idiomas ingles e portugues, baseado linguagem do browser"
+          ],
+          "link": "#"
         }
-      ]
+      ],
+      "buttonVisit": "Visitar"
     },
     "contact": {
       "title": "Entre em contato",
@@ -59,8 +140,8 @@
       "phone": "Telefone",
       "number": "+55 22 99608-7165",
       "email": "fale@wesley.ricardi.com",
-      "linkedin": "https://linkedin.com",
-      "github": "https://github.com",
+      "linkedin": "https://www.linkedin.com/in/wesley-ricardi-02729b203/",
+      "github": "https://github.com/wesleyricard",
       "whatsapp": "wa.me/5522996087165",
       "form": {
         "name": "Nome:*",
@@ -71,7 +152,7 @@
     }
   },
   "footer": {
-    "autor": "Wesley Ricardi",
+    "copyright": "© 2021",
     "localization": "Cabo Frio, RJ - Brasil"
   }
 }

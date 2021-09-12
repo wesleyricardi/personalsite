@@ -1,10 +1,17 @@
 import style from "../../styles/components/footer/index.module.css";
 
-export default function Footer() {
+type Props = {
+  footer: {
+    copyright: string;
+    localization: string;
+  };
+};
+
+export default function Footer({ footer }: Props) {
   return (
     <footer id="footer" className={style.main}>
-      © 2021 - Design by <span>Wesley Ricardi</span>
-      <div>Cabo Frio, RJ - Brasil</div>
+      {footer.copyright} - Design by <span>Wesley Ricardi</span>
+      <div>{footer.localization}</div>
     </footer>
   );
 }

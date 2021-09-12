@@ -19,31 +19,37 @@ type Props = {
   };
 };
 
-export default function contact({ contact }: Props) {
+export default function Contact({ contact }: Props) {
   return (
     <section id="contact" className={style.main}>
       <h2>{contact.title}</h2>
       <p>{contact.title}</p>
       <div>
         <div className={style.social}>
-          <img
-            height="40px"
-            width="40px"
-            src="/social_imgs/whatsapp.svg"
-            alt=""
-          />
-          <img
-            height="40px"
-            width="40px"
-            src="/social_imgs/linkedin.svg"
-            alt=""
-          />
-          <img
-            height="40px"
-            width="40px"
-            src="/social_imgs/github.svg"
-            alt=""
-          />
+          <a href={contact.whatsapp}>
+            <img
+              height="40px"
+              width="40px"
+              src="/social_imgs/whatsapp.svg"
+              alt=""
+            />
+          </a>
+          <a href={contact.linkedin}>
+            <img
+              height="40px"
+              width="40px"
+              src="/social_imgs/linkedin.svg"
+              alt=""
+            />
+          </a>
+          <a href={contact.github}>
+            <img
+              height="40px"
+              width="40px"
+              src="/social_imgs/github.svg"
+              alt=""
+            />
+          </a>
         </div>
         <div className={style.contact}>
           <div className={style.tel_email}>

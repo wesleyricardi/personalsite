@@ -1,6 +1,14 @@
 import style from "../../styles/components/nav/index.module.css";
 
-export default function nav() {
+type Props = {
+  nav: {
+    menu: { link: string; section: string }[];
+    linkedin: string;
+    github: string;
+  };
+};
+
+export default function nav({ nav }: Props) {
   function handleMenu() {
     const Menu = document.getElementById("main_menu") as HTMLElement;
     const menuIcon = document.getElementById("main_menu_icon") as HTMLElement;
@@ -26,23 +34,21 @@ export default function nav() {
           src="/menu_bt.svg"
           alt=""
         />
-        <img width="25px" src="/social_imgs/linkedin_white.svg" alt="" />
-        <img width="25px" src="/social_imgs/github_white.svg" alt="" />
+        <a href={nav.linkedin}>
+          <img width="25px" src="/social_imgs/linkedin_white.svg" alt="" />
+        </a>
+
+        <a href={nav.github}>
+          <img width="25px" src="/social_imgs/github_white.svg" alt="" />
+        </a>
       </div>
       <div id="main_menu" style={{ display: "none", opacity: "0" }}>
         <ul onClick={handleMenu}>
-          <a href="#aboutme">
-            <li>Sobre mim</li>
-          </a>
-          <a href="#skills">
-            <li>Habilidades</li>
-          </a>
-          <a href="#portfolio">
-            <li>Portfolio</li>
-          </a>
-          <a href="#contact">
-            <li>Contato</li>
-          </a>
+          {nav.menu.map((link, index) => (
+            <a key={"menu_link_" + index} href={link.link}>
+              <li>{link.section}</li>
+            </a>
+          ))}
         </ul>
       </div>
     </nav>

@@ -8,7 +8,7 @@ type Props = {
   };
 };
 
-export default function aboutMe({ aboutMe }: Props) {
+export default function AboutMe({ aboutMe }: Props) {
   return (
     <section id="aboutme" className={style.main}>
       <img

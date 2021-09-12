@@ -1,4 +1,13 @@
 export interface languages {
+  head: {
+    title: string;
+    description: string;
+  };
+  nav: {
+    menu: { link: string; section: string }[];
+    linkedin: string;
+    github: string;
+  };
   header: {
     welcome: string;
     title: string;
@@ -6,7 +15,7 @@ export interface languages {
   };
   main: main;
   footer: {
-    autor: string;
+    copyright: string;
     localization: string;
   };
 }
@@ -20,6 +29,11 @@ export interface main {
   skills: {
     title: string;
     text: string;
+    list: {
+      image: string;
+      skill_name: string;
+      seniority: { level: number; name: string };
+    }[];
   };
   portfolio: {
     title: string;
@@ -29,7 +43,9 @@ export interface main {
       photo: string;
       description: string;
       list: string[];
+      link: string;
     }[];
+    buttonVisit: string;
   };
   contact: {
     title: string;

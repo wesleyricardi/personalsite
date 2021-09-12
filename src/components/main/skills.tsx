@@ -5,10 +5,15 @@ type Props = {
   skills: {
     title: string;
     text: string;
+    list: {
+      image: string;
+      skill_name: string;
+      seniority: { level: number; name: string };
+    }[];
   };
 };
 
-export default function skills({ skills }: Props) {
+export default function Skills({ skills }: Props) {
   return (
     <section id="skills" className={style.main}>
       <div>
@@ -17,93 +22,37 @@ export default function skills({ skills }: Props) {
         <div>
           <Slide name="skills">
             {[
-              <ul
-                className={style.skills + " " + style.pleno}
-                key="skills_pleno"
-              >
-                <li>
-                  <img
-                    width="34px"
-                    src="/main/skills_icon/html5.png"
-                    alt="html 5"
-                  />{" "}
-                  HTML 5<span>Pleno</span>
-                </li>
-
-                <li>
-                  <img
-                    width="34px"
-                    src="/main/skills_icon/ccs3.png"
-                    alt="css 3"
-                  />{" "}
-                  CSS 3<span>Pleno</span>
-                </li>
-                <li>
-                  <img
-                    width="34px"
-                    src="/main/skills_icon/php8.svg"
-                    alt="php 8"
-                  />{" "}
-                  PHP 8<span>Pleno</span>
-                </li>
-
-                <li>
-                  <img width="34px" src="/main/skills_icon/js.png" alt="JS" />{" "}
-                  Javascript
-                  <span>Pleno</span>
-                </li>
-                <li>
-                  <img width="34px" src="/main/skills_icon/api.png" alt="API" />{" "}
-                  API Rest
-                  <span>Pleno</span>
-                </li>
+              <ul className={style.skills + " " + style.pleno} key="skills_2">
+                {skills.list.map((skill, index) => {
+                  if (skill.seniority.level === 2)
+                    return (
+                      <li key={"skills_1_" + index}>
+                        <img
+                          width="34px"
+                          src={skill.image}
+                          alt={skill.skill_name}
+                        />
+                        {skill.skill_name}
+                        <span>{skill.seniority.name}</span>
+                      </li>
+                    );
+                })}
               </ul>,
-              <ul
-                className={style.skills + " " + style.junior}
-                key="skills_junior"
-              >
-                <li>
-                  <img
-                    width="34px"
-                    src="/main/skills_icon/node.svg"
-                    alt="nodejs"
-                  />{" "}
-                  NodeJs
-                  <span>Júnior</span>
-                </li>
-                <li>
-                  <img
-                    width="34px"
-                    src="/main/skills_icon/next.png"
-                    alt="nextjs"
-                  />{" "}
-                  NextJS
-                  <span>Júnior</span>
-                </li>
-                <li>
-                  <img
-                    width="34px"
-                    src="/main/skills_icon/react.svg"
-                    alt="reactjs"
-                  />{" "}
-                  React JS
-                  <span>Júnior</span>
-                </li>
-                <li>
-                  <img
-                    width="34px"
-                    src="/main/skills_icon/typescript.svg"
-                    alt="typescript"
-                  />{" "}
-                  Typescript
-                  <span>Júnior</span>
-                </li>
-
-                <li>
-                  <img width="34px" src="/main/skills_icon/sql.png" alt="SQL" />{" "}
-                  SQL
-                  <span>Júnior</span>
-                </li>
+              <ul className={style.skills + " " + style.pleno} key="skills_1">
+                {skills.list.map((skill, index) => {
+                  if (skill.seniority.level === 1)
+                    return (
+                      <li key={"skills_1_" + index}>
+                        <img
+                          width="34px"
+                          src={skill.image}
+                          alt={skill.skill_name}
+                        />
+                        {skill.skill_name}
+                        <span>{skill.seniority.name}</span>
+                      </li>
+                    );
+                })}
               </ul>,
             ]}
           </Slide>

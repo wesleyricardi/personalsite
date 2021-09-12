@@ -17,13 +17,19 @@ section.main [data-slide="portfolio"] {
   display: flex;
 }
 
-.slide > picture > img {
+.slide picture {
+  align-self: center;
+}
+
+.slide picture > img {
   width: 300px;
 }
 
 .slide > div {
+  position: relative;
   width: 100%;
   margin-left: 25px;
+  padding-bottom: 25px;
 }
 
 .slide > div > h3 {
@@ -41,7 +47,10 @@ section.main [data-slide="portfolio"] {
   margin-bottom: 20px;
 }
 
-.slide > div > button {
+.slide > div button {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 40px);
   display: block;
   margin: 0 auto;
   color: white;

@@ -17,7 +17,7 @@ nav.main > div:first-of-type > img:first-of-type {
   transition: all 300ms ease;
 }
 
-nav.main > div:first-of-type > img {
+nav.main > div:first-of-type img {
   height: 25px;
   margin: 0 5px;
 }

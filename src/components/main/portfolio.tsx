@@ -10,7 +10,9 @@ type Props = {
       photo: string;
       description: string;
       list: string[];
+      link: string;
     }[];
+    buttonVisit: string;
   };
 };
 
@@ -23,9 +25,11 @@ export default function Portfolio({ portfolio }: Props) {
         <Slide name="portfolio">
           {portfolio.projects.map((project, index) => (
             <div key={"project_" + index} className={style.slide}>
-              <picture>
-                <img width="300px" src={project.photo} alt="" />
-              </picture>
+              <a href={project.link}>
+                <picture>
+                  <img width="300px" src={project.photo} alt="" />
+                </picture>
+              </a>
               <div>
                 <h3>{project.name}</h3>
                 <p>{project.description}</p>
@@ -34,7 +38,9 @@ export default function Portfolio({ portfolio }: Props) {
                     <li key={index + "_list_" + i}>{list}</li>
                   ))}
                 </ul>
-                <button>Visitar</button>
+                <a href={project.link}>
+                  <button>{portfolio.buttonVisit}</button>
+                </a>
               </div>
             </div>
           ))}
