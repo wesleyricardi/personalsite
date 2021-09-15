@@ -84,6 +84,22 @@ export default function Contact({ contact }: Props) {
               alt=""
             />
           </a>
+          <a href={"tel:" + contact.number}>
+            <img
+              height="40px"
+              width="40px"
+              src="/svgs/phone.svg"
+              alt="phone icon"
+            />
+          </a>
+          <a href={"mailto:" + contact.email}>
+            <img
+              height="40px"
+              width="40px"
+              src="/svgs/email.svg"
+              alt="phone icon"
+            />
+          </a>
         </div>
         <div className={style.contact}>
           <div className={style.tel_email}>
@@ -96,7 +112,9 @@ export default function Contact({ contact }: Props) {
               />
               <div>
                 <h4>{contact.phone}</h4>
-                <span>{contact.number}</span>
+                <span>
+                  <a href={"tel:" + contact.number}>{contact.number}</a>
+                </span>
               </div>
             </div>
             <span>
@@ -111,7 +129,9 @@ export default function Contact({ contact }: Props) {
               />
               <div>
                 <h4>E-mail</h4>
-                <span>{contact.email}</span>
+                <span>
+                  <a href={"mailto:" + contact.email}>{contact.email}</a>
+                </span>
               </div>
             </div>
           </div>
