@@ -31,7 +31,7 @@ export default function Contact({ contact }: Props) {
 
   function handleSend({ email: toEmail, name: toName, message: msg }: Data) {
     try {
-      fetch(`http://wesleyricardi.com/wrdev/api/send_email`, {
+      fetch(`https://wesleyricardi.com/wrdev/api/send_email`, {
         method: "POST",
         mode: "cors",
         headers: {
