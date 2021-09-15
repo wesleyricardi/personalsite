@@ -17,11 +17,11 @@ section.main [data-slide="portfolio"] {
   display: flex;
 }
 
-.slide picture {
+.slide > picture {
   align-self: center;
 }
 
-.slide picture > img {
+.slide > picture img {
   width: 300px;
 }
 
@@ -102,7 +102,7 @@ section.main [data-slide="portfolio"] {
     margin-left: 20px;
   }
 
-  .slide > picture > img {
+  .slide > picture img {
     width: 100vw;
     height: 300px;
     object-fit: cover;

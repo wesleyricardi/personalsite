@@ -25,11 +25,12 @@ export default function Portfolio({ portfolio }: Props) {
         <Slide name="portfolio">
           {portfolio.projects.map((project, index) => (
             <div key={"project_" + index} className={style.slide}>
-              <a href={project.link}>
-                <picture>
+              <picture>
+                <a href={project.link}>
                   <img width="300px" src={project.photo} alt="" />
-                </picture>
-              </a>
+                </a>
+              </picture>
+
               <div>
                 <h3>{project.name}</h3>
                 <p>{project.description}</p>
