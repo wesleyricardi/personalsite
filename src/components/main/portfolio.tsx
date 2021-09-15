@@ -8,6 +8,7 @@ type Props = {
     projects: {
       name: string;
       photo: string;
+      stage: { text: string; percent: string };
       description: string;
       list: string[];
       link: string;
@@ -32,13 +33,16 @@ export default function Portfolio({ portfolio }: Props) {
               </picture>
 
               <div>
-                <h3>{project.name}</h3>
+                <h3>{project.name} </h3>
                 <p>{project.description}</p>
                 <ul>
                   {project.list.map((list, i) => (
                     <li key={index + "_list_" + i}>{list}</li>
                   ))}
                 </ul>
+                <div>
+                  {project.stage.text} - <span>{project.stage.percent}</span>
+                </div>
                 <a href={project.link}>
                   <button>{portfolio.buttonVisit}</button>
                 </a>

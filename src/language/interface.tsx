@@ -41,6 +41,7 @@ export interface main {
     projects: {
       name: string;
       photo: string;
+      stage: { text: string; percent: string };
       description: string;
       list: string[];
       link: string;

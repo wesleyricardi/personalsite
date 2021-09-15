@@ -44,16 +44,23 @@ section.main [data-slide="portfolio"] {
 
 .slide > div > ul {
   margin-left: 30px;
+  margin-bottom: 5px;
+}
+
+.slide > div > div {
   margin-bottom: 20px;
 }
 
-.slide > div button {
+.slide > div > div > span {
+  color: var(--secundary-color);
+}
+
+.slide > div > a {
   position: absolute;
   bottom: 0;
   left: calc(50% - 40px);
   display: block;
   margin: 0 auto;
-  color: white;
 }
 
 @media only screen and (max-width: 1120px) {
