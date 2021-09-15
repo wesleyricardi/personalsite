@@ -6,6 +6,14 @@
   text-align: center;
 }
 
+.main img {
+  transition: all 300ms ease;
+}
+
+.main img:hover {
+  transform: scale(1.2);
+}
+
 .main > div {
   background-color: var(--color-light);
   color: var(--color-dark);
@@ -57,7 +65,7 @@
   display: flex;
 }
 
-.tel_email > div > img {
+.tel_email > div img {
   align-self: center;
 }
 

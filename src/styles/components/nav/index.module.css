@@ -41,16 +41,19 @@ nav.main > div:nth-of-type(2) > ul {
   list-style: none;
 }
 
+nav.main > div:nth-of-type(2) > ul > a {
+  color: var(--color-light);
+}
+
 nav.main > div:nth-of-type(2) > ul > a > li {
   width: 200px;
   margin: 0 auto;
   padding: 10px 20px;
   text-align: center;
   background-color: transparent;
-  transition: background 300ms ease;
+  transition: all 300ms ease;
 }
 
 nav.main > div:nth-of-type(2) > ul > a > li:hover {
-  background-color: var(--main-color);
-  color: var(--color-dark);
+  color: var(--secundary-color);
 }

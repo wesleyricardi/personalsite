@@ -37,7 +37,12 @@ input {
 
 a {
   text-decoration: none;
-  color: var(--main-color);
+  color: var(--color-dark);
+  transition: all 300ms ease;
+}
+
+a:hover {
+  color: var(--secundary-color);
 }
 
 textarea:focus,
@@ -47,12 +52,21 @@ input:focus {
 
 button,
 input[type="submit"] {
+  cursor: pointer;
   padding: 10px 25px;
   background-color: var(--main-color);
   color: var(--color-dark);
   border: none;
   border-radius: 0;
+  transition: all 300ms ease;
 }
+
+button:hover,
+input[type="submit"]:hover {
+  background-color: var(--secundary-color);
+  color: var(--color-light);
+}
+
 p {
   text-align: justify;
 }
