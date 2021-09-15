@@ -39,16 +39,19 @@ export default function Contact({ contact }: Props) {
           Accept: "application/json",
         },
         body: JSON.stringify({ email, name, body }),
-      }).then((res) => {
-        if (res.status === 200) {
-          alert("E-mail enviado com sucesso!");
-          reset({
-            name: "",
-            email: "",
-            body: "",
-          });
-        } else alert("Falha no envio do e-mail!");
-      });
+      }).then(
+        (res) => {
+          if (res.status === 200) {
+            alert("E-mail enviado com sucesso!");
+            reset({
+              name: "",
+              email: "",
+              body: "",
+            });
+          } else alert("Falha no envio do e-mail!");
+        },
+        () => alert("falha no enviao do e-mail!")
+      );
     } catch (error) {
       console.log(error);
     }
