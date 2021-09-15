@@ -1,4 +1,5 @@
 import style from "../../styles/components/main/contact.module.css";
+import { useForm } from "react-hook-form";
 
 type Props = {
   contact: {
@@ -19,7 +20,33 @@ type Props = {
   };
 };
 
+type Data = {
+  name: string;
+  email: string;
+  message: string;
+};
+
 export default function Contact({ contact }: Props) {
+  const { register, handleSubmit } = useForm();
+
+  function handleSend({ email: toEmail, name: toName, message: msg }: Data) {
+    try {
+      fetch(`http://wesleyricardi.com/wrdev/api/send_email`, {
+        method: "POST",
+        mode: "cors",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({ toEmail, toName, msg }),
+      }).then((res) => {
+        if (res.status === 200) alert("E-mail enviado com sucesso!");
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
   return (
     <section id="contact" className={style.main}>
       <h2>{contact.title}</h2>
@@ -81,22 +108,25 @@ export default function Contact({ contact }: Props) {
               </div>
             </div>
           </div>
-          <form action="">
+          <form onSubmit={handleSubmit(handleSend)}>
             <input
+              {...register("name")}
               type="text"
               name="name"
               id="name"
               placeholder={contact.form.name}
             />
             <input
+              {...register("email")}
               type="email"
               name="email"
               id="email"
               placeholder={contact.form.email}
             />
             <textarea
-              name="texto"
-              id="texto"
+              {...register("message")}
+              name="message"
+              id="message"
               cols={30}
               placeholder={contact.form.message}
               rows={10}
