@@ -60,7 +60,7 @@ export default function Contact({ contact }: Props) {
   return (
     <section id="contact" className={style.main}>
       <h2>{contact.title}</h2>
-      <p>{contact.title}</p>
+      <p>{contact.text}</p>
       <div>
         <div className={style.social}>
           <a href={contact.whatsapp}>

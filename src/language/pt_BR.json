@@ -15,18 +15,18 @@
   },
   "header": {
     "welcome": "Hello World",
-    "title": "Me chamo Wesley Ricardi",
-    "text": "Eu sou um desenvolvedor web full stack brasileiro de 26 anos, de uma olhada em meu portfolio e se gostar entre em contato comigo"
+    "title": "Eu sou Wesley Ricardi",
+    "text": "Um desenvolvedor web full stack brasileiro de 26 anos. Conheça meu portfólio e algumas informações sobre mim logo abaixo."
   },
   "main": {
     "aboutMe": {
       "photo": "/main/profile_photo.jfif",
-      "title": "Esse sou eu, apaixado por programação & tecnologia",
-      "text": "Desde de criança eu era louco por computadores e tecnologia, muito curioso para saber como funciona, então novinho fiz um curso de manutenção de computadores e redes, era o mais novo da turma, mais tarde eu queria fazer um site, daí comecei a estudar, desde de então não parei."
+      "title": "Sou um apaixonado por programação e tecnologia",
+      "text": "Meu interesse surgiu muito cedo, ainda na infância, era extremamente curioso em saber como tudo funcionava, por esse motivo, fiz um curso de manutenção de computadores e redes, na época me tornei o aluno mais novo da turma. A partir desse ponto, minha vontade de aprender se multiplicou, comecei a desenvolver o desejo de fazer sites, consequentemente passei a me dedicar a estudar, desde o dia em que comecei eu nunca mais parei."
     },
     "skills": {
       "title": "Minhas habilidades",
-      "text": "Todas as tecnologia e linguagem abaixo, adquiri de forma autodita, queria fazer uma coisa, eu pesquisava como fazer, não importava a dificuldade, quanto mais dificil mais eu me interessava",
+      "text": "Meus estudos se deram de forma completamente autodidata, se dão ainda hoje desse modo, sendo assim, todas as habilidades que adquiri foram em cima de muita insistência, resiliência e desejo de vencer as dificuldades que se mostravam durante o processo.",
       "list": [
         {
           "image": "/main/skills_icon/html5.png",
@@ -82,13 +82,13 @@
     },
     "portfolio": {
       "title": "Meu portfólio",
-      "text": "Desevolvi esse portfolio recentemente, usando as tecnologias mais recente, comecei quando decidi entrar profissionalmente, pois até então programação era meu hobby",
+      "text": "Foi desenvolvido recentemente, quando decidi que trataria a programação como um trabalho e não mais como um hobby. A fim de profissionalizar as minhas habilidades o desenvolvi visando abrir oportunidades no mercado de trabalho, para isso, fiz uso das tecnológicas mais recentes no momento.",
       "projects": [
         {
           "name": "E-menu",
           "photo": "/main/portfolio/emenu.jpg",
           "stage": { "text": "desenvolvido", "percent": "80%" },
-          "description": "É uma ideia que veio em ajudar restaurantes e seus clientes, usei nessa aplicação React + Next + Typescript / API Rest, ja as funções da aplicação são:",
+          "description": "Visa ajudar restaurantes e seus clientes, otimizando o trabalho principalmente de garçons. Foi usado nessa aplicação React + Next + Typescript /  API Rest, já as funções de aplicação são:",
           "list": [
             "Realizar pedido da mesa, atraves de um QR code",
             "Cadastro e login do cliente para proteção e identificar quem realizou o pedido dos itens",
@@ -96,13 +96,13 @@
             "Controle da sua propria conta, pode ver todos os itens pedidos e os quais ele pediu",
             "Total individual ou total da mesa"
           ],
-          "link": "#"
+          "link": "https://emenu.wesleyricardi.com/mesa/155/cardapio"
         },
         {
           "name": "WebOS",
           "photo": "/main/portfolio/webos.jpg",
           "stage": { "text": "desenvolvido", "percent": "60%" },
-          "description": "Desenvolvi essa aplicação com React + Next + Typescript buscando uma experencia de um sistema operacional no browser, para uma navegação 'multiwindow', meu objetivo é usar como base para aplicações Extranet, as funções são:",
+          "description": "Desenvolvi essa aplicação utilizando React + Next + Typescript, a fim de uma experiência similar a um sistema operacional no browser, para uma navegação “multiwindow”, seu objetivo é ser utilizado como base para aplicações Extranet, suas funções são:",
           "list": [
             "Arraste, minimizar, maximizar, mudar tamanho da janela",
             "Cada componente React pode ser usado como uma janela, precisando somente vincular no sistema, apartir dai estará disponivel no menu start",
@@ -111,13 +111,13 @@
             "Notificação",
             "Entre outras funções"
           ],
-          "link": "#"
+          "link": "https://webos-liard.vercel.app/"
         },
         {
           "name": "API",
           "photo": "/main/portfolio/api.png",
           "stage": { "text": "desenvolvido", "percent": "30%" },
-          "description": "Buscando fazer uma API, desenvolvi um tipo de framwork MVC com PHP 8, para facilitar nas minhas futuras construções de API Rest",
+          "description": "Buscando fazer uma API, foi desenvolvido um tipo de framework MVC como  PHP 8, para facilitar minhas futuras construções de API Rest",
           "list": ["CRUD com banco de dados Mysql", "Rotas", "JWT"],
           "link": "#"
         },
@@ -125,9 +125,9 @@
           "name": "Meu site pessoal",
           "photo": "/main/portfolio/personalsite.jpg",
           "stage": { "text": "desenvolvido", "percent": "95%" },
-          "description": "É exatamente esse site, meu objetivo aqui, foi um site, leve, bonito e moderno, possui nota 91 mobile e 100 no desktop no https://developers.google.com/speed/pagespeed/insights/ foi desenvolvido do zero não usei nada além de React, NextJS e Typescript",
+          "description": "Trata-se desse site, teve como objetivo principal a fluidez e a busca por uma estética agradável e moderna. Foi desenvolvido completamente do zero, utilizando-se apenas do React, NextJS e Typescript, É composto com nota 91 mobile e 100 em desktop no https://developers.google.com/speed/pagespeed/insights/",
           "list": [
-            "Componente de carrousel",
+            "Componente proprio de carrousel ",
             "Responsivel",
             "Facilmente editavel",
             "Traducao facilitada",
@@ -146,7 +146,7 @@
       "email": "fale@wesley.ricardi.com",
       "linkedin": "https://www.linkedin.com/in/wesley-ricardi-02729b203/",
       "github": "https://github.com/wesleyricardi",
-      "whatsapp": "wa.me/5522996087165",
+      "whatsapp": "https://wa.me/5522996087165",
       "form": {
         "name": "Nome:*",
         "email": "E-mail:*",

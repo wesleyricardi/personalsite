@@ -1,162 +1,162 @@
 {
   "head": {
-    "title": "Dev. Wesley Ricardi - Desenvolvedor full stack",
-    "description": "Desenvolvedor Web pleno full stack"
+    "title": "Dev. Wesley Ricardi - Developer full stack",
+    "description": "Web developer Full Stack"
   },
   "nav": {
     "menu": [
-      { "link": "#aboutme", "section": "Sobre mim" },
-      { "link": "#skills", "section": "Habilidades" },
-      { "link": "#portfolio", "section": "Portfólio" },
-      { "link": "#contact", "section": "Contato" }
+      { "link": "#aboutme", "section": "About me" },
+      { "link": "#skills", "section": "Skills" },
+      { "link": "#portfolio", "section": "Portfolio" },
+      { "link": "#contact", "section": "Contact" }
     ],
     "linkedin": "https://www.linkedin.com/in/wesley-ricardi-02729b203/",
     "github": "https://github.com/wesleyricardi"
   },
   "header": {
     "welcome": "Hello World",
-    "title": "Me chamo Wesley Ricardi",
-    "text": "Eu sou um desenvolvedor web full stack brasileiro de 26 anos, de uma olhada em meu portfolio e se gostar entre em contato comigo"
+    "title": "I am Wesley Ricardi",
+    "text": "A 26 years old brazilian full stack web developer. Get to know my portfolio and some information about me below. "
   },
   "main": {
     "aboutMe": {
       "photo": "/main/profile_photo.jfif",
-      "title": "Esse sou eu, apaixado por programação & tecnologia",
-      "text": "Desde de criança eu era louco por computadores e tecnologia, muito curioso para saber como funciona, então novinho fiz um curso de manutenção de computadores e redes, era o mais novo da turma, mais tarde eu queria fazer um site, daí comecei a estudar, desde de então não parei."
+      "title": "I am passionate about programming and technology.",
+      "text": "My interest came very early, still in childhood, I was extremely curious to know how everything worked, for this reason, I took a course in computer and network maintenance, at the time I became the youngest student in the class. From that point onwards, my desire to learn multiplied, I started to develop the desire to make websites, consequently I started to dedicate myself to studying, since the day I started I never stopped."
     },
     "skills": {
-      "title": "Minhas habilidades",
-      "text": "Todas as tecnologia e linguagem abaixo, adquiri de forma autodita, queria fazer uma coisa, eu pesquisava como fazer, não importava a dificuldade, quanto mais dificil mais eu me interessava",
+      "title": "My skills",
+      "text": "My studies took place in a completely self-taught way, they still take place that way, so all the skills I acquired were based on a lot of insistence, resilience and desire to overcome the difficulties that showed up during the process. ",
       "list": [
         {
           "image": "/main/skills_icon/html5.png",
           "skill_name": "HTML 5",
-          "seniority": { "level": 2, "name": "Pleno" }
+          "seniority": { "level": 2, "name": "Full" }
         },
         {
           "image": "/main/skills_icon/ccs3.png",
           "skill_name": "CSS 3",
-          "seniority": { "level": 2, "name": "Pleno" }
+          "seniority": { "level": 2, "name": "Full" }
         },
         {
           "image": "/main/skills_icon/php8.svg",
           "skill_name": "PHP 8",
-          "seniority": { "level": 2, "name": "Pleno" }
+          "seniority": { "level": 2, "name": "Full" }
         },
         {
           "image": "/main/skills_icon/js.png",
           "skill_name": "Javascript",
-          "seniority": { "level": 2, "name": "Pleno" }
+          "seniority": { "level": 2, "name": "Full" }
         },
         {
           "image": "/main/skills_icon/api.png",
           "skill_name": "API Rest",
-          "seniority": { "level": 2, "name": "Pleno" }
+          "seniority": { "level": 2, "name": "Full" }
         },
         {
           "image": "/main/skills_icon/node.svg",
           "skill_name": "Node js",
-          "seniority": { "level": 1, "name": "Júnior" }
+          "seniority": { "level": 1, "name": "Junior" }
         },
         {
           "image": "/main/skills_icon/next.png",
           "skill_name": "Next js",
-          "seniority": { "level": 1, "name": "Júnior" }
+          "seniority": { "level": 1, "name": "Junior" }
         },
         {
           "image": "/main/skills_icon/react.svg",
           "skill_name": "React js",
-          "seniority": { "level": 1, "name": "Júnior" }
+          "seniority": { "level": 1, "name": "Junior" }
         },
         {
           "image": "/main/skills_icon/typescript.svg",
           "skill_name": "Typescript",
-          "seniority": { "level": 1, "name": "Júnior" }
+          "seniority": { "level": 1, "name": "Junior" }
         },
         {
           "image": "/main/skills_icon/sql.png",
           "skill_name": "Databe SQL",
-          "seniority": { "level": 1, "name": "Júnior" }
+          "seniority": { "level": 1, "name": "Junior" }
         }
       ]
     },
     "portfolio": {
-      "title": "Meu portfólio",
-      "text": "Desevolvi esse portfolio recentemente, usando as tecnologias mais recente, comecei quando decidi entrar profissionalmente, pois até então programação era meu hobby",
+      "title": "My portfolio",
+      "text": "It was developed recently when I decided I would treat programming like a job and no longer a hobby. In order to professionalize my skills, I developed it in order to open up opportunities in the job market, for that, I made use of the most recent technologies at the time.",
       "projects": [
         {
           "name": "E-menu",
           "photo": "/main/portfolio/emenu.jpg",
-          "stage": { "text": "densevolvido", "percent": "80%" },
-          "description": "É uma ideia que veio em ajudar restaurantes e seus clientes, usei nessa aplicação React + Next + Typescript / API Rest, ja as funções da aplicação são:",
+          "stage": { "text": "developed", "percent": "80%" },
+          "description": "Aims to help restaurants and their customers, optimizing the work of waiters. It was used in this application React + Next + Typescript / Rest API, as the application functions are:",
           "list": [
-            "Realizar pedido da mesa, atraves de um QR code",
-            "Cadastro e login do cliente para proteção e identificar quem realizou o pedido dos itens",
-            "A conta quem abre é o cliente, ele precisa definir uma senha e passar para as outras pessoas na mesa",
-            "Controle da sua propria conta, pode ver todos os itens pedidos e os quais ele pediu",
-            "Total individual ou total da mesa"
+            "Place order from the table, using a QR code",
+            "Customer registration and login for protection and to identify who ordered the items",
+            "The customer opens the account, he needs to set a password and pass it on to the other people at the table",
+            "Control of your own account, you can see all the items ordered and which he ordered",
+            "Individual total or table total"
           ],
-          "link": "#"
+          "link": "https://emenu.wesleyricardi.com/mesa/155/cardapio"
         },
         {
           "name": "WebOS",
           "photo": "/main/portfolio/webos.jpg",
-          "stage": { "text": "densevolvido", "percent": "60%" },
-          "description": "Desenvolvi essa aplicação com React + Next + Typescript buscando uma experencia de um sistema operacional no browser, para uma navegação 'multiwindow', meu objetivo é usar como base para aplicações Extranet, as funções são:",
+          "stage": { "text": "developed", "percent": "60%" },
+          "description": "I developed this application using React + Next + Typescript, in order to have an experience similar to an operating system in the browser, for a “multiwindow” navigation, its objective is to be used as a base for Extranet applications, its functions are: ",
           "list": [
-            "Arraste, minimizar, maximizar, mudar tamanho da janela",
-            "Cada componente React pode ser usado como uma janela, precisando somente vincular no sistema, apartir dai estará disponivel no menu start",
-            "É possivel adicionar atalhos, no startMenu, destktop",
-            "Busca de apps",
-            "Notificação",
-            "Entre outras funções"
+            "Drag, minimize, maximize, change window size",
+            "Each React component can be used as a window, needing only to link to the system, from there it will be available in the start menu",
+            "It is possible to add shortcuts, in startMenu, destktop",
+            "Search for apps",
+            "Notification",
+            "Among other functions"
           ],
-          "link": "#"
+          "link": "https://webos-liard.vercel.app/"
         },
         {
           "name": "API",
           "photo": "/main/portfolio/api.png",
-          "stage": { "text": "densevolvido", "percent": "30%" },
-          "description": "Buscando fazer uma API, desenvolvi um tipo de framwork MVC com PHP 8, para facilitar nas minhas futuras construções de API Rest",
-          "list": ["CRUD com banco de dados Mysql", "Rotas", "JWT"],
+          "stage": { "text": "developed", "percent": "30%" },
+          "description": "Seeking to make an API, a kind of MVC framework like PHP 8 was developed, to facilitate my future API constructions Rest.",
+          "list": ["CRUD with database Mysql", "Rotes", "JWT"],
           "link": "#"
         },
         {
-          "name": "Meu site pessoal",
+          "name": "My personal website ",
           "photo": "/main/portfolio/personalsite.jpg",
-          "stage": { "text": "densevolvido", "percent": "95%" },
-          "description": "É exatamente esse site, meu objetivo aqui, foi um site, leve, bonito e moderno, possui nota 91 mobile e 100 no desktop no https://developers.google.com/speed/pagespeed/insights/ foi desenvolvido do zero não usei nada além de React, NextJS e Typescript",
+          "stage": { "text": "developed", "percent": "95%" },
+          "description": "It is about that site, had as main objective the fluidity and the search for a pleasant and modern aesthetic. It was developed completely from scratch, using only React, NextJS and Typescript, it has a rating of 91 mobile and 100 desktop in https://developers.google.com/speed/pagespeed/insights/",
           "list": [
-            "Componente de carrousel",
-            "Responsivel",
-            "Facilmente editavel",
-            "Traducao facilitada",
-            "Idiomas ingles e portugues, baseado linguagem do browser"
+            "My own carousel component",
+            "Responsible",
+            "Easily editable",
+            "Translation made easy",
+            "English and Portuguese languages, browser language based"
           ],
           "link": "#"
         }
       ],
-      "buttonVisit": "Visitar"
+      "buttonVisit": "Visit"
     },
     "contact": {
-      "title": "Entre em contato",
-      "text": "Adoraria ouvir sobre o que achou",
-      "phone": "Telefone",
+      "title": "Get in touch",
+      "text": "I would love to hear what you think",
+      "phone": "Telephone",
       "number": "+55 22 99608-7165",
       "email": "fale@wesley.ricardi.com",
       "linkedin": "https://www.linkedin.com/in/wesley-ricardi-02729b203/",
       "github": "https://github.com/wesleyricardi",
-      "whatsapp": "wa.me/5522996087165",
+      "whatsapp": "https://wa.me/5522996087165",
       "form": {
-        "name": "Nome:*",
+        "name": "Name:*",
         "email": "E-mail:*",
-        "message": "Digite sua mensagem:*",
-        "button": "Enviar"
+        "message": "Enter your message :*",
+        "button": "Send"
       }
     }
   },
   "footer": {
     "copyright": "© 2021",
-    "localization": "Cabo Frio, RJ - Brasil"
+    "localization": "Cabo Frio, RJ - Brazil"
   }
 }
