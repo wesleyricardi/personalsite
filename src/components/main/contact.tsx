@@ -23,13 +23,13 @@ type Props = {
 type Data = {
   name: string;
   email: string;
-  message: string;
+  body: string;
 };
 
 export default function Contact({ contact }: Props) {
   const { register, handleSubmit } = useForm();
 
-  function handleSend({ email: toEmail, name: toName, message: msg }: Data) {
+  function handleSend({ email, name, body }: Data) {
     try {
       fetch(`https://wesleyricardi.com/wrdev/api/send_email`, {
         method: "POST",
@@ -38,7 +38,7 @@ export default function Contact({ contact }: Props) {
           "Content-Type": "application/json",
           Accept: "application/json",
         },
-        body: JSON.stringify({ toEmail, toName, msg }),
+        body: JSON.stringify({ email, name, body }),
       }).then((res) => {
         if (res.status === 200) alert("E-mail enviado com sucesso!");
       });
@@ -124,8 +124,8 @@ export default function Contact({ contact }: Props) {
               placeholder={contact.form.email}
             />
             <textarea
-              {...register("message")}
-              name="message"
+              {...register("body")}
+              name="body"
               id="message"
               cols={30}
               placeholder={contact.form.message}
