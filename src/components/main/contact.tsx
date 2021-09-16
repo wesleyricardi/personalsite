@@ -149,6 +149,7 @@ export default function Contact({ contact }: Props) {
               name="name"
               id="name"
               placeholder={contact.form.name}
+              required
             />
             <input
               {...register("email")}
@@ -156,14 +157,16 @@ export default function Contact({ contact }: Props) {
               name="email"
               id="email"
               placeholder={contact.form.email}
+              required
             />
             <textarea
               {...register("body")}
               name="body"
               id="message"
               cols={30}
-              placeholder={contact.form.message}
               rows={10}
+              placeholder={contact.form.message}
+              required
             ></textarea>
             <div>
               <button>{contact.form.button}</button>
