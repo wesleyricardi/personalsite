@@ -1,0 +1,33 @@
+.main {
+  background-color: var(--color-light);
+  color: var(--color-dark);
+}
+
+.main > p {
+  text-align: center;
+}
+
+.main > div {
+  display: flex;
+  flex-wrap: wrap;
+  width: var(--container-size);
+  margin: 0 auto;
+}
+
+.main > div > div {
+  width: 50%;
+  padding: 10px;
+}
+.main > div > div > img {
+  display: block;
+  margin: 0 auto;
+}
+
+.main > div > div > h4,
+.main > div > div > h5 {
+  text-align: center;
+}
+
+.main > div > div > p {
+  display: none;
+}

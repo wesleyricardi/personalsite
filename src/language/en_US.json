@@ -7,6 +7,7 @@
     "menu": [
       { "link": "#aboutme", "section": "About me" },
       { "link": "#skills", "section": "Skills" },
+      { "link": "#services", "section": "Services" },
       { "link": "#portfolio", "section": "Portfolio" },
       { "link": "#contact", "section": "Contact" }
     ],
@@ -77,6 +78,32 @@
           "image": "/main/skills_icon/sql.png",
           "skill_name": "Databe SQL",
           "seniority": { "level": 1, "name": "Junior" }
+        }
+      ]
+    },
+    "services": {
+      "title": "Services",
+      "text": "What can i do for you or your company.",
+      "list": [
+        {
+          "image": "/main/services/dev.svg",
+          "title": "Web development",
+          "description": "I can create your website, landing page and web system."
+        },
+        {
+          "image": "/main/services/api.svg",
+          "title": "API development",
+          "description": "I develop secure and efficient Rest API JSON."
+        },
+        {
+          "image": "/main/services/ui_ux.svg",
+          "title": "UI/UX development",
+          "description": "I create your interface together with you, using Figma."
+        },
+        {
+          "image": "/main/services/SEO.svg",
+          "title": "Website Optimization and SEO",
+          "description": "I improve the loading speed of your site and raise it in google results."
         }
       ]
     },

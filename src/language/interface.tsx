@@ -35,6 +35,15 @@ export interface main {
       seniority: { level: number; name: string };
     }[];
   };
+  services: {
+    title: string;
+    text: string;
+    list: {
+      image: string;
+      title: string;
+      description: string;
+    }[];
+  };
   portfolio: {
     title: string;
     text: string;
