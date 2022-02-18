@@ -1,3 +1,7 @@
+section.main > p {
+  text-align: center;
+}
+
 section.main > div:first-of-type {
   background-color: var(--color-light);
   color: var(--color-dark) !important;
