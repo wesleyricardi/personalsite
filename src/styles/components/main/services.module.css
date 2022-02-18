@@ -18,6 +18,12 @@
   width: 50%;
   padding: 10px;
 }
+
+.main > div > div:hover {
+  transition: all 300ms linear;
+  transform: scale(1.1);
+}
+
 .main > div > div > img {
   display: block;
   margin: 0 auto;

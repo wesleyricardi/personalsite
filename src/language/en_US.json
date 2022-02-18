@@ -23,11 +23,11 @@
     "aboutMe": {
       "photo": "/main/profile_photo.jfif",
       "title": "I am passionate about programming and technology.",
-      "text": "My interest came very early, still in childhood, I was extremely curious to know how everything worked, for this reason, I took a course in computer and network maintenance, at the time I became the youngest student in the class. From that point onwards, my desire to learn multiplied, I started to develop the desire to make websites, consequently I started to dedicate myself to studying, since the day I started I never stopped."
+      "text": "My interest arose very early, still in my childhood, I was extremely curious to know how everything worked, for that reason, when I was 14 I took a computer and network maintenance course, I ended up falling in love with the software area, consequently I found myself in web development , then I started to dedicate myself and never stopped."
     },
     "skills": {
       "title": "My skills",
-      "text": "My studies took place in a completely self-taught way, they still take place that way, so all the skills I acquired were based on a lot of insistence, resilience and desire to overcome the difficulties that showed up during the process. ",
+      "text": "I am self-taught, all the skills I acquired were with a lot of passion to do the hardest in the best way.",
       "list": [
         {
           "image": "/main/skills_icon/html5.png",
@@ -109,7 +109,7 @@
     },
     "portfolio": {
       "title": "My portfolio",
-      "text": "It was developed recently when I decided I would treat programming like a job and no longer a hobby. In order to professionalize my skills, I developed it in order to open up opportunities in the job market, for that, I made use of the most recent technologies at the time.",
+      "text": "These are my most recent projects using the latest technology.",
       "projects": [
         {
           "name": "E-menu",

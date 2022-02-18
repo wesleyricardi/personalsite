@@ -1,7 +1,7 @@
 {
   "head": {
     "title": "Dev. Wesley Ricardi - Desenvolvedor full stack",
-    "description": "Desenvolvedor Web pleno full stack"
+    "description": "Desenvolvedor Web full stack pleno"
   },
   "nav": {
     "menu": [
@@ -23,11 +23,11 @@
     "aboutMe": {
       "photo": "/main/profile_photo.jfif",
       "title": "Sou um apaixonado por programação e tecnologia",
-      "text": "Meu interesse surgiu muito cedo, ainda na infância, era extremamente curioso em saber como tudo funcionava, por esse motivo, fiz um curso de manutenção de computadores e redes, na época me tornei o aluno mais novo da turma. A partir desse ponto, minha vontade de aprender se multiplicou, comecei a desenvolver o desejo de fazer sites, consequentemente passei a me dedicar a estudar, desde o dia em que comecei eu nunca mais parei."
+      "text": "Meu interesse surgiu muito cedo, ainda na infância, era extremamente curioso em saber como tudo funcionava, por esse motivo, com 14 anos fiz um curso de manutenção de computadores e redes, acabei me apaixonado na área de software, consequentemente me encontrei no desenvolvimento web, passei então a me dedicar e nunca mais parei."
     },
     "skills": {
       "title": "Minhas habilidades",
-      "text": "Meus estudos se deram de forma completamente autodidata, se dão ainda hoje desse modo, sendo assim, todas as habilidades que adquiri foram em cima de muita insistência, resiliência e desejo de vencer as dificuldades que se mostravam durante o processo.",
+      "text": "Sou um autodidata, todas as habilidades que adquiri foram com muita paixão em fazer o mais difícil da melhor forma.",
       "list": [
         {
           "image": "/main/skills_icon/html5.png",
@@ -109,7 +109,7 @@
     },
     "portfolio": {
       "title": "Meu portfólio",
-      "text": "Foi desenvolvido recentemente, quando decidi que trataria a programação como um trabalho e não mais como um hobby. A fim de profissionalizar as minhas habilidades o desenvolvi visando abrir oportunidades no mercado de trabalho, para isso, fiz uso das tecnológicas mais recentes no momento.",
+      "text": "Esses são meus projetos mais recentementes usando das tecnológicas em alta.",
       "projects": [
         {
           "name": "E-menu",
